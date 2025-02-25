@@ -1,0 +1,79 @@
+
+<link rel="stylesheet" href="../css/nuevoAlojamiento.css">
+
+    <div class="container">
+	<form data-ng-submit="alojamiento.functions.crearProperty()">
+        <div class="input-group">
+            <label for="nombreAlojamiento">Nombre del alojamiento</label>
+            <input type="text" id="nombreAlojamiento" placeholder="Escribe el nombre" data-ng-model="alojamiento.property.name" required>
+        </div>
+        
+        <div class="input-group">
+			<label for="direccion">Cuidad</label>
+			<input type="text" id="city" name="city" placeholder="Escribe la ciudad" data-ng-model="alojamiento.property.city" required>
+		</div>
+
+        <div class="input-group">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" placeholder="Escribe la dirección" data-ng-model="alojamiento.property.address" required>
+        </div>
+
+        <div class="input-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" placeholder="Escribe el teléfono" data-ng-model="alojamiento.property.telephone" required>
+        </div>
+
+        <div class="input-group">
+            <label for="distanciaCentro">Distancia al centro (en km)</label>
+            <input type="text" id="distanciaCentro" placeholder="Escribe la distancia" data-ng-model="alojamiento.property.centerDistance" required>
+        </div>
+
+        <div class="input-group">
+            <label for="valoracion">Valoración media</label>
+            <input type="text" id="valoracion" placeholder="Escribe la valoración" data-ng-model="alojamiento.property.gradesAverage" required>
+        </div>
+
+        <div class="input-group">
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" placeholder="Escribe la descripción" data-ng-model="alojamiento.property.description" required></textarea>
+        </div>
+
+        <p>Servicios o instalaciones ofrecidos:</p>
+        <div class="instalaciones">
+            <div class="checkbox-option">
+                <input type="checkbox" id="TV" name="TV" data-ng-model="alojamiento.property.TV" data-ng-true-value="1" data-ng-false-value="0">
+                <label for="TV">TV</label>
+            </div>
+            <div class="checkbox-option">
+                <input type="checkbox" id="aireAcondicionado" name="aireAcondicionado" data-ng-model="alojamiento.property.aireAcondicionado" data-ng-true-value="1" data-ng-false-value="0">
+                <label for="aireAcondicionado">Aire Acondicionado</label>
+            </div>
+        </div>
+
+        <p>Disponibilidad:</p>
+        <div class="instalaciones">
+            <div class="checkbox-option">
+                <input type="checkbox" id="disponible" name="disponible" data-ng-model="alojamiento.property.available" data-ng-true-value="1" data-ng-false-value="0">
+                <label for="disponible">Disponible</label>
+            </div>
+        </div>
+
+        <p>¿Permite mascotas?</p>
+        <div class="instalaciones">
+            <div class="checkbox-option">
+                <input type="checkbox" id="mascotas" name="mascotas" data-ng-model="alojamiento.property.petFriendly" data-ng-true-value="1" data-ng-false-value="0">
+                <label for="mascotas">Sí</label>
+            </div>
+        </div>
+
+        <button type="submit">Crear Nuevo Alojamiento</button>
+    </form>
+    </div>
+
+    <div class="footer">
+        <a href="#">Sobre Booking.com</a>
+        <a href="#">Atención al cliente</a>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Política de privacidad y cookies</a>
+        <a href="#">Gestiona las recomendaciones personalizadas</a>
+    </div>

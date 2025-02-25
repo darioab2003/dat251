@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html data-ng-app="Booking">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Nacho Alcalde">
+    <title>Booking.com</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/icono.svg">
+	
+	
+    <!-- Include the AngularJS library -->
+    <script src="../js/angular/angular.js"></script>
+    <script src="../js/angular/angular-route.js"></script>
+    <!-- Modules -->
+    <script src="../js/app.js"></script>
+    <script src="../js/controllers/controladorInicio.js"></script>
+    <script src="../js/controllers/controladorUsuario.js"></script>
+    <script src="../js/controllers/controladorProperty.js"></script>
+    <script src="../js/controllers/controladorAccommodation.js"></script>
+    <script src="../js/controllers/controladorListaProperties.js"></script>
+    <script src="../js/controllers/controladorReview.js"></script>
+    <script src="../js/controllers/controladorReviewPropietario.js"></script>
+    <script src="../js/controllers/controladorListaAccommodations.js"></script>
+    <script src="../js/controllers/controladorBooking.js"></script>
+    <script src="../js/controllers/controladorHistorialReservas.js"></script>
+    <script src="../js/controllers/controladorConfirmarPagoReserva.js"></script>
+    
+    <script src="../js/factories/usersFactory.js"></script>
+    <script src="../js/factories/reviewsFactory.js"></script>
+    <script src="../js/factories/propertiesFactory.js"></script>
+    <script src="../js/factories/bookingsFactory.js"></script>
+    <script src="../js/factories/bookingsAccommodationsFactory.js"></script>
+    <script src="../js/factories/accommodationsFactory.js"></script>
+    <script src="../js/factories/favoritosFactory.js"></script>
+    
+</head>
+
+<body>
+
+    <header>
+        <div id="bannerAzul">
+            <div class="cabecera" data-ng-controller="controladorInicio as inicio">
+               <h3>PROJECT DAT-251</h3>
+
+                <p id="EUR">EUR</p>
+
+                <div id="icono1" class="iconosInicioSesion"><img src="../img/bandera.png" alt="Bandera" width="30"></div>
+                <div id="icono2" class="iconosInicioSesion"><img src="../img/ayudaWhite.png" alt="Ayuda" width="30"></div>
+
+                <p>Register an accommodation</p>
+
+                <a href="../LoginServlet.do" data-ng-show="inicio.user.email === undefined" ><button class="inicioSesion">Log in</button></a>
+                <a data-ng-href="#!/Perfil/{{inicio.user.id}}/" data-ng-show="inicio.user.email !== undefined" ><button class="inicioSesion">Profile</button></a>
+                <a href="#!/Registro"><button class="inicioSesion" data-ng-show="inicio.user.email === undefined">Create an account</button></a>
+            </div>
+
+            <div class="botones-container">
+                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/alojamientoWhite.png" alt="Alojamiento">Accommodations</button>
+                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/vueloWhite.png" alt="Vuelos">Flights</button>
+                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/hotelWhite.png" alt="Vuelo + Hotel">Flights + Hotel</button>
+                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/cocheWhite.png" alt="Alquiler de coches">Car renting</button>
+                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/noriaWhite.png" alt="Atracciones turísticas">Tourist attractions</button>
+                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/taxiWhite.png" alt="Taxis aeropuerto">Airport Taxies</button>
+            </div>
+        </div>
+    </header>
+    <div data-ng-view></div>
+</body>
+
+</html>

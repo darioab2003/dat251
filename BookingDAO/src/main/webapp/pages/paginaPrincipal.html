@@ -1,0 +1,128 @@
+
+<div class="container">
+   	<nav>
+      <div class="nav-rectangle">
+          <div class="filter-option">
+              <img src="../img/coche.png" alt="¿A dónde vas?">
+              <input type="text" name="destino" placeholder="¿Where are you going?" style="width: 150px;" data-ng-model="destino">
+           </div>
+       	   <div class="filter-option">
+              <img src="../img/calendario.png" alt="Fecha de entrada - Fecha de salida">
+              <input type="date" name="fecha_entrada">
+              <input type="date" name="fecha_salida">
+           </div>
+           <div class="filter-option">
+              <img src="../img/usuario.png" alt="2 Adults - 0 Kids - 1 Room">
+              <input type="number" name="adultos" placeholder="Adults" style="width: 60px;">
+              <input type="number" name="niños" placeholder="Kids" style="width: 80px;">
+              <input type="number" name="habitaciones" placeholder="Rooms" style="width: 100px;">
+           </div>
+           <a data-ng-href="#!/ListaProperties?destino={{destino}}">
+	           <button id="search-button" type="submit">Search</button>
+	       </a>
+      </div>
+  </nav>
+
+    <div class="content-container">
+        <!-- Tu contenido va aquí -->
+
+        <section class="checkbox-section">
+            <input type="checkbox" id="viajeTrabajo"><label for="viajeTrabajo">Travel because of work</label>
+            <input type="checkbox" id="BuscarVuelos"><label for="BuscarVuelos">Search flights</label>
+        </section>
+
+        <section class="ofertas">
+            <h2>Offers</h2>
+            <p>Promotions, Discounts and offers for you</p>
+
+            <div class="ofertas-container">
+                <div class="oferta">
+                    <h3>Enjoy your trip:</h3>
+                    <p>Search for accommodations that offer long stays, there are plenty with lower monthly loan.</p>
+                    <img src="../img/oferta.jpg" alt="Oferta 1">
+                    <button class="estancia">Choose your stay</button>
+                </div>
+                <div class="oferta">
+                    <h3>Fly to your dream destiny</h3>
+                    <p>Compare and reserve flights more flexibly</p>
+                    <img src="../img/avion.JPG" alt="Oferta 2">
+                    <button class="estancia">Search flights</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="descubreEspaña">
+            <h2>Discover Spain</h2>
+            <p>Popular destinations with a lot to offer</p>
+            <div class="descubre">
+                <div class="imagen4">
+                    <img class="ciudad" src="../img/granCanarias.jpg" alt="Gran Canaria">
+                    <p class="nombreCiudad">Gran Canaria</p>
+                    <p>5.971 accommodations</p>
+                </div>
+                <div class="imagen4">
+                    <img class="ciudad" src="../img/Maspalomas.jpg" alt="Maspalomas">
+                    <p class="nombreCiudad">Maspalomas</p>
+                    <p>189 accommodations</p>
+                </div>
+                <div class="imagen4">
+                    <img class="ciudad" src="../img/tenerife.jpg" alt="Tenerife">
+                    <p class="nombreCiudad">Tenerife</p>
+                    <p>1.693 accommodations</p>
+                </div>
+                <div class="imagen4">
+                    <img class="ciudad" src="../img/galicia.jpg" alt="Galicia">
+                    <p class="nombreCiudad">Galicia</p>
+                    <p>3.427 accommodations</p>
+                </div>
+                <div class="imagen4">
+                    <img class="ciudad" src="../img/asturias.jpg" alt="Asturias">
+                    <p class="nombreCiudad">Asturias</p>
+                    <p>2.531 accommodations</p>
+                </div>
+                <div class="imagen4">
+                    <img class="ciudad" src="../img/salamanca.jpg" alt="Salamanca">
+                    <p class="nombreCiudad">Salamanca</p>
+                    <p>3.824 accommodations</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="BuscarAlojamiento">
+            <h2>Search by accommodation type</h2>
+
+            <div class="tipoAlojamiento-container">
+                <div class="tipoAlojamiento">
+                    <img src="../img/hoteles.jpeg" alt="Hoteles">
+                    <p>Hotels</p>
+                </div>
+                <div class="tipoAlojamiento">
+                    <img src="../img/apartamentos.jpeg" alt="Apartamentos">
+                    <p>Flats</p>
+                </div>
+                <div class="tipoAlojamiento">
+                    <img src="../img/resorts.jpeg" alt="Resorts">
+                    <p>Resorts</p>
+                </div>
+                <div class="tipoAlojamiento">
+                    <img src="../img/villas.jpeg" alt="Villas">
+                    <p>Villas</p>
+                </div>
+            </div>
+        </section>
+
+        
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-text">
+            <p id="ahorraTiempo">¡Save time and money!</p>
+            <p>Register and we will send you the best deals.</p>
+        </div>
+
+        <form>
+            <input type="email" class="email-input" placeholder="Your email address">
+            <button type="submit" class="subscribe-button">Suscribe!</button>
+        </form>
+    </div>

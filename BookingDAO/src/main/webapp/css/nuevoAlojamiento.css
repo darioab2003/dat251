@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+}
+
+#bannerAzul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #1b3b94;
+}
+
+.cabecera {
+    position: relative;
+    margin: 10px auto;
+    width: 1150px;
+    /*background-color: rgba(221, 231, 241, 0.103);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera h3 {
+    font-size: 25px;
+    margin-top: 13px;
+    margin-right: 280px;
+    color: white;
+}
+
+#EUR {
+    margin-right: 20px;
+}
+
+.iconosInicioSesion {
+    text-align: center;
+}
+
+#icono1,
+#icono2 {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.cabecera p {
+    color: white;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.inicioSesion {
+    background-color: white;
+    color: rgb(7, 98, 172);
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    margin: 10px 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.container {
+    position: relative;
+    margin: 175px auto;
+    margin-top: 110px;
+    width: 800px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+input,
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+textarea {
+    height: 80px;
+}
+
+.container p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.instalaciones {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.checkbox-option {
+    margin-right: 20px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-option label {
+    margin-left: 10px;
+}
+
+.instalaciones input {
+    transform: scale(1.5);
+}
+
+button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: rgb(7, 98, 172);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 10%; 
+    width: 100%;
+    background-color: #d1d1d1; /* Fondo gris clarito */
+    color: #007BFF; /* Color azul para el texto y los enlaces */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+    z-index: 1000; /* Ajustar el z-index según la necesidad */
+}
+
+.footer a {
+    color: #007BFF; /* Color azul para los enlaces */
+    text-decoration: none;
+    margin: 0 10px; /* Márgenes entre los enlaces */
+}
