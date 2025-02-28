@@ -7,7 +7,6 @@
 body {
     margin: 0;
     font-family: "Arial", sans-serif;
-    background-color: #f4f4f4;
 }
 
 #bannerAzul {
@@ -16,7 +15,7 @@ body {
     left: 0;
     right: 0;
     height: 80px;
-    background-color: green;
+    background-color: #004000;
 }
 
 .cabecera {
@@ -31,7 +30,6 @@ body {
 
 .cabecera h3 {
     font-size: 25px;
-    margin-top: 13px;
     margin-right: 280px;
     color: white;
 }
@@ -59,7 +57,7 @@ body {
 
 .inicioSesion {
     background-color: white;
-    color: rgb(7, 98, 172);
+    color: #004000;
     font-size: 15px;
     width: 150px;
     height: 40px;
@@ -74,73 +72,105 @@ body {
     position: relative;
     margin: 175px auto;
     margin-top: 110px;
-    width: 800px;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 2%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 1150px;
+    height: 100%;
+    /*background-color: rgb(255, 164, 136);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.input-group {
-    margin-bottom: 20px;
+#inicio_reservas {
+    width: 100%;
+    height: 30px;
+    display: flex;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 16px;
-}
-
-input,
-textarea {
-    width: calc(100% - 20px);
-    padding: 10px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-    height: 40px;
-}
-
-textarea {
-    height: 80px;
-}
-
-.container p {
-    font-size: 16px;
+#titulo {
+    color: black;
     font-weight: bold;
-    margin-bottom: 8px;
+    font-size: 30px;
 }
 
-.instalaciones {
+#pregunta_inicial_reservas {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 730px;
+}
+
+.blue-link {
+    color: green;
+    /* Cambiar el color del texto a azul (#007BFF) */
+    text-decoration: underline;
+    /* Añadir subrayado a los enlaces */
+}
+
+.Reserva {
+    width: 100%;
+    height: 170px;
+}
+
+.Ubicacion_reserva {
+    margin-top: 20px;
+    margin-bottom: 3px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.fechas_reserva {
+    color: rgba(0, 0, 0, 0.741);
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+#Desc_reserva {
+    height: 100px;
+    border: 1px solid grey;
     display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.checkbox-option {
-    margin-right: 20px;
-    margin-left: 5px;
-    display: flex;
-    align-items: center;
+#foto_reserva {
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
 }
 
-.checkbox-option label {
+.Nombre_hotel_reserva {
     margin-left: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
 }
 
-.instalaciones input {
-    transform: scale(1.5);
+.Fechas_reserva_rectangulo {
+    margin-left: 10px;
+    color: black;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
-button {
-    width: calc(100% - 20px);
-    padding: 10px;
-    background-color: rgb(0, 64, 0);
-    color: white;
-    border: none;
+.Precio_reserva {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 650px;
+}
+
+#foto_menu_reserva {
+    margin-left: 35px;
+    width: 23px;
+    height: 30px;
     cursor: pointer;
-    box-sizing: border-box;
 }
-
 
 .footer {
     position: fixed;

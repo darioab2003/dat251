@@ -25,6 +25,12 @@ angular.module('Booking')
                     return response.data;
                 });
         },
+        getUserFavorites: function(userId) {
+                return $http.get(url + '/' + userId + '/favorites')
+                    .then(function(response) {
+                        return response.data;
+                    });
+        },
     	putUser: function(user) {
 		    var urlid = url + '/' + user.id;  // Aseguramos el separador "/"
 		    console.log("Making PUT request to:", urlid);
@@ -52,7 +58,7 @@ angular.module('Booking')
     		var urlid = url + '/'+ 'userCorrectoAccomodation/' + id;
     		return $http.put(urlid)
     			.then(function(response){
-					return response.data;//userCorrectoAccomodation
+					return response.data;userCorrectoAccomodation
 				});
     	},
     	postUser: function(user){

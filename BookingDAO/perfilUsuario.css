@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+#bannerAzul {
+    position: relative;
+    height: 80px;
+    background-color: green;
+}
+
+#encuentraEstancia {
+    position: relative;
+    margin: 0 auto;
+    width: 1150px;
+    height: 200px;
+    /*background-color: rgb(46, 139, 0);*/
+}
+
+#logo {
+    font-size: 30px;
+    line-height: 60px;
+    margin-left: 20px;
+    color: white;
+}
+
+.iconosInicioSesion {
+    position: absolute;
+    top: 15px;
+    text-align: center;
+}
+
+#icono1 {
+    right: 160px;
+}
+
+#icono2 {
+    right: 71px;
+}
+
+#login-container {
+    width: 400px;
+    /* Puedes ajustar el ancho según tus necesidades */
+    height: 500px;
+    /* Puedes ajustar la altura según tus necesidades */
+    /*background-color: rgb(243, 20, 20);*/
+    /* Color de fondo para que sea visible, puedes cambiarlo según el diseño */
+    margin: 20px auto;
+    /* Centra el contenedor horizontalmente con un margen superior de 20px */
+    padding: 20px;
+    /* Espaciado interno dentro del contenedor */
+    border-radius: 10px;
+    /* Sombra para un efecto visual */
+}
+
+
+/* Estilos para la tabla */
+
+#apartamentos,
+#favoritos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+
+/* Estilos para las celdas de la tabla */
+
+#apartamentos th,
+#apartamentos td,
+#favoritos th,
+#favoritos td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+
+/* Estilos para la primera fila de la tabla (cabecera) */
+
+#apartamentos th,
+#favoritos th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+
+/* Estilos para las filas impares de la tabla */
+
+#apartamentos tr:nth-child(odd),
+#favoritos tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#apartamentos img {
+    display: block;
+    margin: 0 auto;
+}
+
+.button-crear,
+.button-eliminar,
+.button-cerrar,
+.button-editar {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.button-crear:hover,
+.button-eliminar,
+.button-cerrar:hover,
+.button-editar:hover {
+    background-color: #004000;
+}
+
+.login-message {
+    font-size: 22px;
+    /* Tamaño de letra más grande */
+    font-weight: bold;
+    /* Texto en negrita */
+    margin-bottom: 15px;
+    /* Espacio inferior para separar la frase del formulario */
+}
+
+.form-label {
+    font-weight: bold;
+    display: block;
+    /* Asegura que la etiqueta aparezca en una nueva línea */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Espacio inferior para separar la etiqueta del campo de entrada */
+}
+
+.form-input {
+    width: 100%;
+    /* O ajusta el ancho según tus necesidades */
+    padding: 8px;
+    /* Espaciado interno */
+    box-sizing: border-box;
+    /* Incluye el relleno en el tamaño total del campo de entrada */
+    border: 1px solid #ccc;
+    /* Borde del campo de entrada */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+.submit-button {
+    width: 100%;
+    margin: 10px auto;
+    background-color: green;
+    /* Color de fondo azul */
+    color: #fff;
+    /* Color de texto blanco */
+    padding: 10px 20px;
+    /* Espaciado interno del botón */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+}
+
+.submit-button:hover {
+    background-color: #004000;
+    /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+
+#registration-options {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    margin: 30px auto;
+    background-color: rgb(255, 255, 255);
+    /* Ajusta el margen horizontalmente */
+    gap: 10px;
+    /* Espacio entre los botones */
+}
+
+.separator-line {
+    text-align: center;
+    margin: 15px auto;
+    position: relative;
+}
+
+.separator-line::before,
+.separator-line::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    /* Ajusta según sea necesario */
+    border-top: 1px solid #ccc;
+}
+
+.separator-line::before {
+    right: 55%;
+}
+
+.separator-line::after {
+    left: 55%;
+}
+
+.separator-text {
+    background-color: #fff;
+    /* Ajusta el color de fondo según sea necesario */
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    /* Asegura que el texto esté en la capa superior */
+    color: #999;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.separator {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    /* Ajusta el margen inferior según tus preferencias */
+}
+
+.disclaimer-text {
+    color: #999;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.link-text {
+    color: blue;
+    text-decoration: underline;
+    /* Puedes agregar subrayado si quieres que parezca más un enlace */
+}
+
+.copyright-text {
+    color: #999;
+    text-align: center;
+    font-size: 15px;
+}
+
+.button-reservas,
+.button-reservas-link {
+    background-color: #004000;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.button-reservas:hover,
+.button-reservas-link:hover {
+    background-color: #004000;
+}
+
+#misReservas-options {
+    width: 420px;
+    display: flex;
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    margin: 10px auto;
+    margin-top: -15px;
+    margin-left: -10px;
+    margin-bottom: 40px;
+    /*background-color: rgb(255, 1, 1);*/
+    /* Ajusta el margen horizontalmente */
+    gap: 10px;
+    /* Espacio entre los botones */
+}

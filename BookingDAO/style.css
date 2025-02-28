@@ -416,7 +416,7 @@ td {
 }
 
 .footer {
-    background-color: #004000;
+    background-color: rgb(0, 128, 0);
     height: 220px;
     color: white;
     text-align: center;

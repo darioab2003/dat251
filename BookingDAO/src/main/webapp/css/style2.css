@@ -1,58 +1,37 @@
+/* Restablecer márgenes y padding para todos los elementos */
+
 * {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
+/*
 body {
-    margin: 0;
     font-family: "Arial", sans-serif;
 }
 
 #bannerAzul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 185px;
-    background-color: green;;
-}
-
-.cabecera {
     position: relative;
-    margin: 10px auto;
-    width: 1150px;
-    /*background-color: rgba(221, 231, 241, 0.103);*/
+    height: 200px;
+    background-color: #1b3b94;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.cabecera h3 {
-    font-size: 25px;
-    margin-right: 280px;
-    color: white;
+#encuentraEstancia {
+    position: relative;
+    margin: 0 auto;
+    width: 1800px;
+    height: 200x;
+    margin-left: 190px;
+    background-color: rgb(46, 139, 0);
 }
 
-#EUR {
-    margin-right: 20px;
-}
-
-.iconosInicioSesion {
-    text-align: center;
-}
-
-#icono1,
-#icono2 {
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
-}
-
-.cabecera p {
-    color: white;
-    font-size: 18px;
-    margin-right: 15px;
+#botonesInicioSesion {
+    position: relative;
+    margin: 0 auto;
+    width: 1150px;
+    height: 200px;
+    background-color: rgb(139, 0, 74);
 }
 
 .inicioSesion {
@@ -61,78 +40,30 @@ body {
     font-size: 15px;
     width: 150px;
     height: 40px;
-    margin: 10px 10px;
+    margin: 40px 10px;
     padding: 10px;
     border: none;
     cursor: pointer;
     margin-right: 5px;
 }
 
-#filtro {
-    font-size: 15px;
-    padding: 5px;
-    border-radius: 3px;
-    margin-right: 5px;
-    margin-bottom: 20px;
-}
-
-button[type="submit"] {
-    background-color: rgb(0, 128, 0);
+#bannerAzul h1 {
+    font-size: 50px;
+    line-height: 120px;
     color: white;
-    font-size: 15px;
-    width: 60/px;
-    height: 30px;
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
 }
 
-.botones-container {
-    position: relative;
-    margin: 10px auto;
-    width: 1150px;
-    /*background-color: rgba(221, 231, 241, 0.103);*/
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.boton {
-    background-color: transparent;
-    border: 2px solid transparent;
+#bannerAzul h4 {
+    margin-top: -20px;
     color: white;
-    font-size: 15px;
-    height: 50px;
-    padding: 10px 15px;
-    cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s;
-    display: flex;
-    align-items: center;
+    font-weight: 50;
 }
-
-
-/* Estilos cuando el botón está activado */
-
-.boton.activado {
-    background-color: rgba(255, 255, 255, 0.1);
-    /* Azul más claro al hacer clic */
-    border: 2px solid white;
-    border-radius: 20px;
-}
-
-.iconoBotones {
-    margin-right: 10px;
-    width: 25px;
-    height: 22px;
-    fill: white;
-}
-
+*/
 .container {
-    position: relative;
-    margin: 150px auto;
-    width: 1150px;
-    /*background-color: rgb(243, 255, 136);*/
+    max-width: 1150px;
+    margin: 0 auto;
+    margin-top: -35px;
+    /*background-color: blueviolet;*/
 }
 
 nav {
@@ -164,7 +95,7 @@ nav {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    position: relative;
+    flex: 1 1 auto;
 }
 
 .filter-option img {
@@ -175,7 +106,7 @@ nav {
 }
 
 #search-button {
-    background-color: rgb(0, 128, 0);
+    background-color: green;
     color: white;
     font-size: 20px;
     width: 130px;
@@ -185,10 +116,6 @@ nav {
     margin-right: 5px;
     border-radius: 3px;
     cursor: pointer;
-}
-
-.container p {
-    margin: 15px 0px;
 }
 
 .checkbox-section {
@@ -255,7 +182,7 @@ nav {
 }
 
 .estancia {
-    background-color: rgb(0, 128, 0);
+    background-color: green;
     color: white;
     font-size: 20px;
     width: 200px;
@@ -400,8 +327,36 @@ nav {
     font-size: 30px;
 }
 
+.botones-container {
+    position: relative;
+    width: 430px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton {
+    background-color: transparent;
+    border: 2px solid transparent;
+    font-size: 17px;
+    height: 50px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
 
 /* Estilos cuando el botón está activado */
+
+.boton.activado {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid green;
+    color: green;
+    border-radius: 20px;
+}
 
 table {
     margin-top: 25px;
@@ -449,14 +404,14 @@ td {
     height: 50px;
     width: 150px;
     font-size: 18px;
-    background-color: rgb(0, 128, 0);
+    background-color: green;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 .registroSesion {
-    background-color: rgb(0, 128, 0);
+    background-color: #004000;
     height: 40px;
     color: white;
     text-align: center;
@@ -465,7 +420,7 @@ td {
 
 .usuarioActivo {
     margin-top: 50px;
-    background-color: rgb(0, 128, 0);
+    background-color: #004000;
     height: 40px;
     color: white;
     padding: 20px;

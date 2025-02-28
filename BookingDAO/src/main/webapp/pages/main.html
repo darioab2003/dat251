@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Nacho Alcalde">
-    <title>Booking.com</title>
+    <title>Project Dat251</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/icono.svg">
 	
@@ -41,27 +41,27 @@
     <header>
         <div id="bannerAzul">
             <div class="cabecera" data-ng-controller="controladorInicio as inicio">
-               <h3>PROJECT DAT-251</h3>
+               <h3>Project Dat251</h3>
 
                 <p id="EUR">EUR</p>
 
                 <div id="icono1" class="iconosInicioSesion"><img src="../img/bandera.png" alt="Bandera" width="30"></div>
                 <div id="icono2" class="iconosInicioSesion"><img src="../img/ayudaWhite.png" alt="Ayuda" width="30"></div>
 
-                <p>Register an accommodation</p>
+                <p>Register accommodation</p>
 
                 <a href="../LoginServlet.do" data-ng-show="inicio.user.email === undefined" ><button class="inicioSesion">Log in</button></a>
                 <a data-ng-href="#!/Perfil/{{inicio.user.id}}/" data-ng-show="inicio.user.email !== undefined" ><button class="inicioSesion">Profile</button></a>
-                <a href="#!/Registro"><button class="inicioSesion" data-ng-show="inicio.user.email === undefined">Create an account</button></a>
+                <a href="#!/Registro"><button class="inicioSesion" data-ng-show="inicio.user.email === undefined">Create account</button></a>
             </div>
 
             <div class="botones-container">
-                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/alojamientoWhite.png" alt="Alojamiento">Accommodations</button>
+                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/alojamientoWhite.png" alt="Alojamiento">Accommodation</button>
                 <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/vueloWhite.png" alt="Vuelos">Flights</button>
-                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/hotelWhite.png" alt="Vuelo + Hotel">Flights + Hotel</button>
+                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/hotelWhite.png" alt="Vuelo + Hotel">Flight + Hotel</button>
                 <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/cocheWhite.png" alt="Alquiler de coches">Car renting</button>
                 <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/noriaWhite.png" alt="Atracciones turísticas">Tourist attractions</button>
-                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/taxiWhite.png" alt="Taxis aeropuerto">Airport Taxies</button>
+                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/taxiWhite.png" alt="Taxis aeropuerto">Airport taxis</button>
             </div>
         </div>
     </header>

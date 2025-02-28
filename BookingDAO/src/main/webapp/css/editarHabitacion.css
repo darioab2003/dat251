@@ -16,7 +16,7 @@ body {
     left: 0;
     right: 0;
     height: 80px;
-    background-color: green;
+    background-color: #004000;
 }
 
 .cabecera {
@@ -59,7 +59,7 @@ body {
 
 .inicioSesion {
     background-color: white;
-    color: rgb(7, 98, 172);
+    color: #004000;
     font-size: 15px;
     width: 150px;
     height: 40px;
@@ -134,13 +134,12 @@ textarea {
 button {
     width: calc(100% - 20px);
     padding: 10px;
-    background-color: rgb(0, 64, 0);
+    background-color: rgb(7, 98, 172);
     color: white;
     border: none;
     cursor: pointer;
     box-sizing: border-box;
 }
-
 
 .footer {
     position: fixed;

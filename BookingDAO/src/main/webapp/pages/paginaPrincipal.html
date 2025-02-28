@@ -1,51 +1,50 @@
-
 <div class="container">
-   	<nav>
-      <div class="nav-rectangle">
-          <div class="filter-option">
-              <img src="../img/coche.png" alt="¿A dónde vas?">
-              <input type="text" name="destino" placeholder="¿Where are you going?" style="width: 150px;" data-ng-model="destino">
-           </div>
-       	   <div class="filter-option">
-              <img src="../img/calendario.png" alt="Fecha de entrada - Fecha de salida">
-              <input type="date" name="fecha_entrada">
-              <input type="date" name="fecha_salida">
-           </div>
-           <div class="filter-option">
-              <img src="../img/usuario.png" alt="2 Adults - 0 Kids - 1 Room">
-              <input type="number" name="adultos" placeholder="Adults" style="width: 60px;">
-              <input type="number" name="niños" placeholder="Kids" style="width: 80px;">
-              <input type="number" name="habitaciones" placeholder="Rooms" style="width: 100px;">
-           </div>
-           <a data-ng-href="#!/ListaProperties?destino={{destino}}">
-	           <button id="search-button" type="submit">Search</button>
-	       </a>
-      </div>
-  </nav>
+    <nav>
+        <div class="nav-rectangle">
+            <div class="filter-option">
+                <img src="../img/coche.png" alt="Where are you going?">
+                <input type="text" name="destino" placeholder="Where are you going?" style="width: 150px;" data-ng-model="destino">
+            </div>
+            <div class="filter-option">
+                <img src="../img/calendario.png" alt="Check-in Date - Check-out Date">
+                <input type="date" name="fecha_entrada">
+                <input type="date" name="fecha_salida">
+            </div>
+            <div class="filter-option">
+                <img src="../img/usuario.png" alt="2 adults - 0 children - 1 room">
+                <input type="number" name="adultos" placeholder="Adults" style="width: 60px;">
+                <input type="number" name="niños" placeholder="Children" style="width: 80px;">
+                <input type="number" name="habitaciones" placeholder="Rooms" style="width: 100px;">
+            </div>
+            <a data-ng-href="#!/ListaProperties?destino={{destino}}">
+                <button id="search-button" type="submit">Search</button>
+            </a>
+        </div>
+    </nav>
 
     <div class="content-container">
-        <!-- Tu contenido va aquí -->
+        <!-- Your content goes here -->
 
         <section class="checkbox-section">
-            <input type="checkbox" id="viajeTrabajo"><label for="viajeTrabajo">Travel because of work</label>
-            <input type="checkbox" id="BuscarVuelos"><label for="BuscarVuelos">Search flights</label>
+            <input type="checkbox" id="viajeTrabajo"><label for="viajeTrabajo">I’m traveling for work</label>
+            <input type="checkbox" id="BuscarVuelos"><label for="BuscarVuelos">I’m looking for flights</label>
         </section>
 
         <section class="ofertas">
-            <h2>Offers</h2>
-            <p>Promotions, Discounts and offers for you</p>
+            <h2>Deals</h2>
+            <p>Promotions, discounts, and special offers for you</p>
 
             <div class="ofertas-container">
                 <div class="oferta">
-                    <h3>Enjoy your trip:</h3>
-                    <p>Search for accommodations that offer long stays, there are plenty with lower monthly loan.</p>
-                    <img src="../img/oferta.jpg" alt="Oferta 1">
+                    <h3>Enjoy longer vacations:</h3>
+                    <p>Find accommodations that offer extended stays, many with reduced monthly rates.</p>
+                    <img src="../img/oferta.jpg" alt="Offer 1">
                     <button class="estancia">Choose your stay</button>
                 </div>
                 <div class="oferta">
-                    <h3>Fly to your dream destiny</h3>
-                    <p>Compare and reserve flights more flexibly</p>
-                    <img src="../img/avion.JPG" alt="Oferta 2">
+                    <h3>Fly to your dream destination</h3>
+                    <p>Get inspired, compare, and book flights with more flexibility.</p>
+                    <img src="../img/avion.JPG" alt="Offer 2">
                     <button class="estancia">Search flights</button>
                 </div>
             </div>
@@ -53,12 +52,12 @@
 
         <section class="descubreEspaña">
             <h2>Discover Spain</h2>
-            <p>Popular destinations with a lot to offer</p>
+            <p>These popular destinations have a lot to offer</p>
             <div class="descubre">
                 <div class="imagen4">
                     <img class="ciudad" src="../img/granCanarias.jpg" alt="Gran Canaria">
                     <p class="nombreCiudad">Gran Canaria</p>
-                    <p>5.971 accommodations</p>
+                    <p>5,971 accommodations</p>
                 </div>
                 <div class="imagen4">
                     <img class="ciudad" src="../img/Maspalomas.jpg" alt="Maspalomas">
@@ -68,37 +67,37 @@
                 <div class="imagen4">
                     <img class="ciudad" src="../img/tenerife.jpg" alt="Tenerife">
                     <p class="nombreCiudad">Tenerife</p>
-                    <p>1.693 accommodations</p>
+                    <p>1,693 accommodations</p>
                 </div>
                 <div class="imagen4">
                     <img class="ciudad" src="../img/galicia.jpg" alt="Galicia">
                     <p class="nombreCiudad">Galicia</p>
-                    <p>3.427 accommodations</p>
+                    <p>3,427 accommodations</p>
                 </div>
                 <div class="imagen4">
                     <img class="ciudad" src="../img/asturias.jpg" alt="Asturias">
                     <p class="nombreCiudad">Asturias</p>
-                    <p>2.531 accommodations</p>
+                    <p>2,531 accommodations</p>
                 </div>
                 <div class="imagen4">
                     <img class="ciudad" src="../img/salamanca.jpg" alt="Salamanca">
                     <p class="nombreCiudad">Salamanca</p>
-                    <p>3.824 accommodations</p>
+                    <p>3,824 accommodations</p>
                 </div>
             </div>
         </section>
 
         <section class="BuscarAlojamiento">
-            <h2>Search by accommodation type</h2>
+            <h2>Search by type of accommodation</h2>
 
             <div class="tipoAlojamiento-container">
                 <div class="tipoAlojamiento">
-                    <img src="../img/hoteles.jpeg" alt="Hoteles">
+                    <img src="../img/hoteles.jpeg" alt="Hotels">
                     <p>Hotels</p>
                 </div>
                 <div class="tipoAlojamiento">
-                    <img src="../img/apartamentos.jpeg" alt="Apartamentos">
-                    <p>Flats</p>
+                    <img src="../img/apartamentos.jpeg" alt="Apartments">
+                    <p>Apartments</p>
                 </div>
                 <div class="tipoAlojamiento">
                     <img src="../img/resorts.jpeg" alt="Resorts">
@@ -111,18 +110,57 @@
             </div>
         </section>
 
-        
-        </div>
+        <section class="destinosGustosos">
+            <h2>Our favorite destinations</h2>
+
+            <div class="botones-container">
+                <button class="boton" onclick="activarBoton(this)">Regions</button>
+                <button class="boton" onclick="activarBoton(this)">Cities</button>
+                <button class="boton" onclick="activarBoton(this)">Points of interest</button>
+            </div>
+
+            <table>
+                <tr>
+                    <td><strong>Mallorca</strong><br>10,774 accommodations</td>
+                    <td><strong>Lanzarote</strong><br>3,962 accommodations</td>
+                    <td><strong>La Gomera</strong><br>490 accommodations</td>
+                    <td><strong>Algarve</strong><br>12,541 accommodations</td>
+                    <td><strong>Fuerteventura</strong><br>2,912 accommodations</td>
+                </tr>
+                <tr>
+                    <td><strong>Formentera</strong><br>399 accommodations</td>
+                    <td><strong>Asturias</strong><br>3,310 accommodations</td>
+                    <td><strong>El Hierro</strong><br>333 accommodations</td>
+                    <td><strong>Costa Brava</strong><br>10,258 accommodations</td>
+                    <td><strong>Menorca</strong><br>1,696 accommodations</td>
+                </tr>
+                <tr>
+                    <td><strong>Cantabria</strong><br>1,925 accommodations</td>
+                    <td><strong>South Tenerife</strong><br>6,826 accommodations</td>
+                    <td><strong>Gran Canaria</strong><br>5,976 accommodations</td>
+                    <td><strong>La Graciosa Island</strong><br>49 accommodations</td>
+                    <td><strong>Bora Bora</strong><br>59 accommodations</td>
+                </tr>
+                <tr>
+                    <td><strong>North Sierra of Madrid</strong><br>158 accommodations</td>
+                    <td><strong>Almería Coast</strong><br>2,018 accommodations</td>
+                    <td><strong>Tenerife</strong><br>9,632 accommodations</td>
+                    <td><strong>Ibiza</strong><br>1,660 accommodations</td>
+                    <td><strong>Galicia</strong><br>6,561 accommodations</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="footer-text">
+        <p id="ahorraTiempo">Save time and money!</p>
+        <p>Sign up and we'll send you the best deals for you.</p>
     </div>
 
-    <div class="footer">
-        <div class="footer-text">
-            <p id="ahorraTiempo">¡Save time and money!</p>
-            <p>Register and we will send you the best deals.</p>
-        </div>
-
-        <form>
-            <input type="email" class="email-input" placeholder="Your email address">
-            <button type="submit" class="subscribe-button">Suscribe!</button>
-        </form>
-    </div>
+    <form>
+        <input type="email" class="email-input" placeholder="Your email address">
+        <button type="submit" class="subscribe-button">Subscribe!</button>
+    </form>
+</div>

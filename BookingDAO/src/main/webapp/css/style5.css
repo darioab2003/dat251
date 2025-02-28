@@ -1,0 +1,613 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+#bannerAzul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #1b3b94;
+}
+
+.cabecera {
+    position: relative;
+    margin: 10px auto;
+    width: 1150px;
+    /*background-color: rgba(221, 231, 241, 0.103);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera h3 {
+    font-size: 25px;
+    margin-right: 280px;
+    color: white;
+}
+
+#EUR {
+    margin-right: 20px;
+}
+
+.iconosInicioSesion {
+    text-align: center;
+}
+
+#icono1,
+#icono2 {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.cabecera p {
+    color: white;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.inicioSesion {
+    background-color: white;
+    color: #004000;
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    margin: 10px 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.container {
+    position: relative;
+    margin: 175px auto;
+    margin-top: 80px;
+    width: 1150px;
+    /*background-color: rgb(255, 164, 136);*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.pasosCarrito {
+    width: 100%;
+    height: 50px;
+    /*background-color: violet;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.paso {
+    display: flex;
+    align-items: center;
+}
+
+.circulo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.textoPaso {
+    font-size: 18px;
+    margin-right: 10px;
+    /* Ajuste de margen entre el texto y la línea */
+}
+
+.azul {
+    background-color: green;
+    color: white;
+}
+
+.blanco {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.linea {
+    flex-grow: 1;
+    height: 1px;
+    background-color: black;
+    border: 1px solid black;
+    margin-left: 10px;
+    /* Ajuste de margen entre la línea y el texto */
+    margin-right: 10px;
+    /* Ajuste de margen entre la línea y el círculo */
+}
+
+.sections {
+    display: flex;
+    margin-top: 10px;
+}
+
+.left-section {
+    width: 450px;
+    height: 920px;
+    /*background-color: #53fa53;*/
+    align-self: flex-start;
+    box-sizing: border-box;
+    border-left: 10px;
+}
+
+.right-section {
+    margin-left: 10px;
+    width: 690px;
+    height: 920px;
+    /*background-color: #53fa53;*/
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+
+.top-div {
+    width: 100%;
+    height: 33%;
+    /*background-color: burlywood;*/
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#hotel {
+    font-size: 18px;
+    margin-top: -15px
+}
+
+#hotel img {
+    width: 100px;
+    margin-left: 10px;
+    vertical-align: sub;
+}
+
+.top-div h3 {
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+#ubicacion {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+#valoracionUbicacion {
+    font-size: 17px;
+    margin-top: 5px;
+    color: green;
+}
+
+.valoracion {
+    display: flex;
+    margin-top: 10px;
+}
+
+.valoracion-numerica {
+    margin-top: 2px;
+    width: 22px;
+    height: 17px;
+    background-color: green;
+    color: #fff;
+    padding: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.valoracion p {
+    margin-top: 7px;
+    font-size: 18px;
+}
+
+.requisitosPopulares {
+    margin-left: -12px;
+    margin-bottom: -10px;
+    width: 100%;
+    height: 45px;
+    /*background-color: darkgray;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.populares {
+    background-color: white;
+    height: 22px;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1 1 auto;
+}
+
+.populares img {
+    margin-right: 8px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.medium-div {
+    width: 100%;
+    height: 34%;
+    /*background-color: burlywood;*/
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px 15px;
+    font-size: 18px;
+}
+.medium-div p{
+	margin-top: -6px; 
+}
+.reserva {
+    display: flex;
+    margin-top: 10px;
+}
+
+.entradaSalida {
+    margin-right: 20px;
+    margin-top: 10px;
+    font-size: 17px;
+	margin-bottom: 5px; 
+}
+
+.entradaSalida p{
+	margin-top: -10px; 
+}
+
+.fecha {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.hora {
+    font-weight: lighter;
+    color: grey;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.separador {
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.53);
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+#noches {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.separador-linea {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.53);
+    margin-bottom: 15px;
+    align-items: center;
+    margin-top: -10px; 
+}
+
+#seleccion {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#eleccion {
+    color: green;
+}
+
+.bottom-div {
+    width: 100%;
+    height: 34%;
+    /*background-color: burlywood;*/
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.bottom-div h3 {
+    margin: 20px;
+}
+
+#total {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.importeTotal {
+    margin-top: 15px;
+    width: 405px;
+    height: 60px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: rgb(160, 197, 229);
+    display: flex;
+}
+
+#cantidad {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 245px;
+}
+
+#impuestos {
+    margin-left: -192px;
+    margin-top: 45px;
+}
+
+.impuestosCargos {
+    background-color: white;
+    height: 22px;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1 1 auto;
+    font-size: 17px;
+    margin-top: -20px; 
+}
+
+.impuestosCargos img {
+    margin-left: 10px;
+    margin-right: 18px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+#iva {
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 72px;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+#dineroIva {
+    font-size: 17px;
+    margin-top: -20px;
+    margin-left: 350px;
+    color: rgba(0, 0, 0, 0.66);
+}
+
+.top-divRight {
+    width: 100%;
+    height: 10%;
+    /*background-color: burlywood;*/
+    box-sizing: border-box;
+    border: 1px solid rgba(204, 204, 204, 0.503);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 15px;
+}
+
+.top-divRight img {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.blue-link {
+    color: green;
+    /* Cambiar el color del texto a azul (#007BFF) */
+    text-decoration: underline;
+    /* Añadir subrayado a los enlaces */
+}
+
+.introduceTusDatos {
+    width: 100%;
+    height: 92%;
+    /*background-color: burlywood;*/
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.rellenarCampos {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0.279);
+    border: 1px solid rgba(35, 35, 35, 0.694);
+    border-radius: 10px;
+}
+
+.rellenarCampos img {
+    margin-left: 20px;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.cuestionario {
+    width: 690px;
+}
+
+.cuestionario p {
+    margin-left: 2px;
+    margin-top: 3px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.673);
+}
+
+.casilla {
+    margin-top: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.casillaApellido {
+    width: 45%;
+    margin-left: 330px;
+    margin-top: -86px;
+}
+
+.casillaEmail {
+    margin-top: 20px;
+    width: 45%;
+}
+
+.casillaPais {
+    margin-top: 15px;
+    width: 47%;
+}
+
+.casillaTelefono {
+    margin-top: 15px;
+    width: 47%;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.inputAncho {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checkbox-section {
+    margin-top: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-section input {
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+.checkbox-section label {
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+#sms {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.673);
+    margin-top: 3px;
+    margin-left: 24px;
+    margin-bottom: 20px;
+}
+
+.checkboxAdicional {
+    margin-top: 20px;
+}
+
+.checkboxAdicional p {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.checkboxAdicional input {
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+.checkboxAdicional label {
+    font-weight: lighter;
+}
+
+.checkboxReserva {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.checkboxSiNo {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-option {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.checkboxSiNo input {
+    transform: scale(1.5);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 10%; 
+    width: 100%;
+    background-color: #d1d1d1; /* Fondo gris clarito */
+    color: green; /* Color azul para el texto y los enlaces */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Incluir el padding en el ancho total */
+    z-index: 1000; /* Ajustar el z-index según la necesidad */
+}
+
+.footer a {
+    color: green; /* Color azul para los enlaces */
+    text-decoration: none;
+    margin: 0 10px; /* Márgenes entre los enlaces */
+}
+
+#pagarAlojamiento {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: #004000;
+    color: white;
+}

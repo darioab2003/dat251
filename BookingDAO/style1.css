@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+#bannerAzul {
+    height: 80px;
+    background-color: green;
+}
+
+#encuentraEstancia {
+    display: flex;
+    align-items: center;
+    /* Alinear verticalmente */
+    max-width: 1150px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#logo {
+    font-size: 30px;
+    line-height: 80px;
+    /* Alinear verticalmente con el contenedor */
+    color: white;
+    margin-right: auto;
+    /* Empujar hacia la izquierda */
+}
+
+.iconosInicioSesion {
+    position: relative;
+    /* Cambiado de absolute a relative */
+}
+
+#icono1 {
+    margin-left: 10px;
+    /* Espacio entre los iconos */
+}
+
+#icono2 {
+    margin-left: 10px;
+    /* Espacio entre los iconos */
+}
+
+.inicioSesion {
+    background-color: white;
+    color: rgb(7, 98, 172);
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    /* Espacio entre el botón y los iconos */
+}
+
+#login-container {
+    width: 400px;
+    /* Puedes ajustar el ancho según tus necesidades */
+    height: 500px;
+    /* Puedes ajustar la altura según tus necesidades */
+    background-color: white;
+    /* Color de fondo para que sea visible, puedes cambiarlo según el diseño */
+    margin: 20px auto;
+    /* Centra el contenedor horizontalmente con un margen superior de 20px */
+    padding: 20px;
+    /* Espaciado interno dentro del contenedor */
+    border-radius: 10px;
+    /* Sombra para un efecto visual */
+}
+
+.login-message {
+    font-size: 22px;
+    /* Tamaño de letra más grande */
+    font-weight: bold;
+    /* Texto en negrita */
+    margin-bottom: 15px;
+    /* Espacio inferior para separar la frase del formulario */
+}
+
+.form-label {
+    font-weight: bold;
+    display: block;
+    /* Asegura que la etiqueta aparezca en una nueva línea */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    /* Espacio inferior para separar la etiqueta del campo de entrada */
+}
+
+.form-input {
+    width: 100%;
+    /* O ajusta el ancho según tus necesidades */
+    padding: 8px;
+    /* Espaciado interno */
+    box-sizing: border-box;
+    /* Incluye el relleno en el tamaño total del campo de entrada */
+    border: 1px solid #ccc;
+    /* Borde del campo de entrada */
+    border-radius: 5px;
+    /* Bordes redondeados */
+}
+
+.submit-button {
+    width: 100%;
+    margin: 10px auto;
+    background-color: green;
+    /* Color de fondo azul */
+    color: #fff;
+    /* Color de texto blanco */
+    padding: 10px 20px;
+    /* Espaciado interno del botón */
+    border: none;
+    /* Sin borde */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+}
+
+.submit-button:hover {
+    background-color: rgb(0, 64, 0);
+    /* Cambia el color de fondo al pasar el cursor sobre el botón */
+}
+
+#registration-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 80px;
+    /* Ajusta según sea necesario para reducir el espacio entre los cuadrados */
+}
+
+.registration-option {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.separator-line {
+    text-align: center;
+    margin: 15px auto;
+    position: relative;
+}
+
+.separator-line::before,
+.separator-line::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    /* Ajusta según sea necesario */
+    border-top: 1px solid #ccc;
+}
+
+.separator-line::before {
+    right: 55%;
+}
+
+.separator-line::after {
+    left: 55%;
+}
+
+.separator-text {
+    background-color: #fff;
+    /* Ajusta el color de fondo según sea necesario */
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+    /* Asegura que el texto esté en la capa superior */
+    color: #999;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.separator {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    /* Ajusta el margen inferior según tus preferencias */
+}
+
+.disclaimer-text {
+    color: #999;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.link-text {
+    color: blue;
+    text-decoration: underline;
+    /* Puedes agregar subrayado si quieres que parezca más un enlace */
+}
+
+.copyright-text {
+    color: #999;
+    text-align: center;
+    font-size: 15px;
+}

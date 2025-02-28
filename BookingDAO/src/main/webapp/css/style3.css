@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+#bannerAzul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 185px;
+    background-color: green;
+}
+
+.cabecera {
+    position: relative;
+    margin: 10px auto;
+    width: 1150px;
+    /*background-color: rgba(221, 231, 241, 0.103);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera h3 {
+    font-size: 25px;
+    margin-right: 280px;
+    color: white;
+}
+
+#EUR {
+    margin-right: 20px;
+}
+
+.iconosInicioSesion {
+    text-align: center;
+}
+
+#icono1,
+#icono2 {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.cabecera p {
+    color: white;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.inicioSesion {
+    background-color: white;
+    color: rgb(7, 98, 172);
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    margin: 10px 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#filtro {
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    width: 60/px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.botones-container {
+    position: relative;
+    margin: 10px auto;
+    width: 1150px;
+    /*background-color: rgba(221, 231, 241, 0.103);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton {
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: white;
+    font-size: 15px;
+    height: 50px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Estilos cuando el botón está activado */
+
+.boton.activado {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Azul más claro al hacer clic */
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.iconoBotones {
+    margin-right: 10px;
+    width: 25px;
+    height: 22px;
+    fill: white;
+}
+
+.container {
+    position: relative;
+    margin: 150px auto;
+    width: 1150px;
+    /*background-color: rgb(243, 255, 136);*/
+}
+
+nav {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.nav-rectangle {
+    background-color: rgb(236, 158, 40);
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.filter-option {
+    background-color: white;
+    flex: 1;
+    height: 50px;
+    padding: 13px;
+    margin-right: 5px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+}
+
+.filter-option img {
+    margin-right: 8px;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+#search-button {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+    padding: 5px;
+    border: none;
+    margin-right: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.container p {
+    margin: 15px 0px;
+}
+
+.sections {
+    display: flex;
+    margin-top: 10px;
+    /* Ajusta según sea necesario */
+}
+
+.left-section {
+    width: 250px;
+    height: 1000px;
+    /*background-color: #53fa53;*/
+    margin-right: 10px;
+    align-self: flex-start;
+    box-sizing: border-box;
+}
+
+.top-div {
+    width: 100%;
+    height: 15%;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ver-mapa-button {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 60px;
+    background-color: green;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.top-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.bottom-div {
+    width: 100%;
+    height: 62%;
+    background-color: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    /* Borde gris */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+.separador-linea {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 10px;
+}
+
+#presupuesto {
+    width: 100%;
+    margin-bottom: 15px;
+    -webkit-appearance: none;
+}
+
+#presupuesto::-webkit-slider-thumb {
+    background-color: rgb(236, 158, 40);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+    /* Ajuste para centrar el círculo en la barra */
+}
+
+#presupuesto::-webkit-slider-runnable-track {
+    height: 10px;
+    border-radius: 5px;
+    background-color: green;
+}
+
+.filtros-populares {
+    width: 100%;
+    height: 40%;
+    margin-left: 5px;
+    box-sizing: border-box;
+}
+
+.checkbox-filtros {
+    display: flex;
+    align-items: center;
+    margin-bottom: -15px;
+    white-space: pre-wrap;
+    /* Adjust the margin-bottom as needed */
+}
+
+.checkbox-filtros p {
+    margin-left: 15px;
+}
+
+#fantastico {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+    margin-left: 28px;
+    margin-bottom: -5px;
+}
+
+.right-section {
+    flex: 1;
+    width: 840px;
+    /*background-color: #4e0e0c;*/
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    /* Agrega un margen inferior */
+}
+
+.right-section p {
+    margin-top: -2px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.orden-filtro {
+    width: 35%;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.informacion-extra1 {
+    width: 97%;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: left;
+    display: flex;
+}
+
+.informacion-extra1 img {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.informacion-extra1 p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.informacion-extra2 {
+    width: 97%;
+    background-color: rgb(236, 233, 233);
+    border: 1px solid rgb(109, 107, 107);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    text-align: left;
+    display: flex;
+}
+
+.informacion-extra2 p {
+    font-size: 14px;
+    font-weight: lighter;
+    margin: 5px;
+}
+
+.informacion-extra2 img {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+.mas-informacion-link {
+    color: green;
+    cursor: pointer;
+    margin-right: 10px;
+    /*Para los links de los alojamientos (Caceres y Mostrar en el mapa)*/
+}
+
+.mas-informacion-link:hover {
+    text-decoration: underline;
+    /* Subraya el enlace al pasar sobre él */
+}
+
+.alojamiento1 {
+    width: 97%;
+    height: 250px;
+    border: 1px solid rgb(185, 185, 185);
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+    display: flex;
+}
+
+.alojamiento1-img {
+    width: 30%;
+    height: 80%;
+    margin-top: 25px;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.alojamiento1-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.favoritos {
+    position: absolute;
+    margin-top: -230px;
+    margin-left: 160px;
+    width: 120px;
+    height: 120px;
+}
+
+.favoritos img {
+    width: 130px; /* O el tamaño deseado */
+    height: auto;
+}
+
+.alojamiento1-infoIzq {
+    width: 40%;
+    height: 80%;
+    margin-top: 25px;
+    margin-left: 20px;
+    /*border: 1px solid rgb(185, 185, 185);*/
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tituloAlojamiento {
+    margin-left: 3px;
+    margin-top: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#alojamientoLocalizacion {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#hojas {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+#habitacion-info {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* Ajusta según tus preferencias */
+}
+
+#cama-info {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 12px;
+    /* Ajusta según tus preferencias */
+}
+
+#aviso-info {
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* Ajusta según tus preferencias */
+}
+
+.alojamiento1-infoDer {
+    width: 25%;
+    height: 93%;
+    margin-top: 25px;
+    margin-left: 20px;
+    /*border: 1px solid rgb(185, 185, 185);*/
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.valoracion {
+    display: flex;
+    margin-left: 60px;
+}
+
+.valoracion p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    /* Añadido margen a la derecha del texto */
+}
+
+.valoracion-numerica {
+    margin-top: 2px;
+    width: 18%;
+    height: 23px;
+    background-color: green;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#comentarios {
+    margin-left: 28px;
+    margin-top: -16px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+#ubicacion {
+    margin-left: 90px;
+    margin-top: -12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: green;
+    }
+
+#noches {
+    margin-left: 80px;
+    margin-top: 50px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+#precio {
+    margin-left: 150px;
+    margin-top: -10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#impuestos {
+    margin-left: 33px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.verDisponibilidad {
+    width: 170px;
+    height: 35px;
+    margin-left: 32px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    white-space: pre-wrap;
+}
+
+.footer {
+    margin-top: 50px;
+    background-color: #004000;
+    height: 220px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-text p {
+    font-size: 17px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.782);
+    margin-bottom: 7px;
+}
+
+#ahorraTiempo {
+    margin-top: 35px;
+    font-size: 25px;
+}
+
+.email-input {
+    font-size: 18px;
+    padding: 10px;
+    width: 30%;
+    height: 28px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.subscribe-button {
+    padding: 10px;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.registroSesion {
+    background-color: green;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.registroSesion-button {
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -1,4 +1,3 @@
-
 <link rel="stylesheet" href="../css/perfilUsuario.css">
     <div id="login-container">
         <p class="login-message">PROFILE</p>
@@ -8,7 +7,7 @@
 	        <label for="nombre" class="form-label">Name</label>
 	        <input type="text" id="name" class="form-input" data-ng-model="perfil.user.name" required>
 	        
-	        <label for="surname" class="form-label">Last Name</label>
+	        <label for="surname" class="form-label">Surname</label>
 	        <input type="text" id="surname" class="form-input" data-ng-model="perfil.user.surname" required>
 	        
 	        <label for="email" class="form-label">E-mail</label>
@@ -21,13 +20,87 @@
         	
         </form>
         
-        <form data-ng-submit="perfil.functions.cerrarSesion()">
-				<button class="button-cerrar" type="submit">Log out</button>
-			</form>
-        
+        <div class="separator-line">
+            <span class="separator-text">MY APARTMENTS</span>
+        </div>
+	
+        <table id="apartamentos">
+            <thead>
+                <tr>
+                    <th class="listaApartamentos">Apartment ID</th>
+                    <th class="listaApartamentos">Name</th>
+                    <th class="listaApartamentos">City</th>
+                    <th class="listaApartamentos">EDIT</th>
+                    <th class="listaApartamentos">DELETE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="property in perfil.properties" data-ng-if="property.idu == perfil.user.id">
+                    <td class="listaApartamentos">{{property.id}}</td>
+                    <td class="listaApartamentos">{{property.name}}</td>
+                    <td class="listaApartamentos">{{property.city}}</td>
+                    <td class="listaApartamentos">
+	                    <a data-ng-href="#!/EditarAlojamiento/{{property.id}}/">
+	                        <img src="../img/edit.png" alt="edit">
+	                    </a>
+                    </td>
+                    <td class="listaApartamentos">
+                    	<a data-ng-href="#!/EliminarProperty/{{property.id}}/">
+                        	<img src="../img/delete.png" alt="delete">
+                        </a>
+                    </td>
+                </tr>
+                <!-- Add more rows if needed -->
+            </tbody>
+        </table>
 
-        <div class="separator"></div>
-        <p class="disclaimer-text">When logging in or creating an account, you are accepting our <span class="link-text">Terms and conditions</span> and <span class="link-text">Privacy Policy</span>.</p>
+        <div class="separator-line">
+            <span class="separator-text">MY FAVORITES</span>
+        </div>
+
+        <table id="favoritos">
+            <thead>
+                <tr>
+                    <th class="listaFavoritos">Apartment ID</th>
+                    <th class="listaFavoritos">Name</th>
+                    <th class="listaFavoritos">City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="favorito in perfil.favoritos" data-ng-if="favorito.idu == perfil.user.id">
+		            <td class="listaFavoritos">{{favorito.propertyDetails.id}}</td>
+		            <td class="listaFavoritos">{{favorito.propertyDetails.name}}</td>
+		            <td class="listaFavoritos">{{favorito.propertyDetails.city}}</td>
+		        </tr>
+            </tbody>
+        </table>
+
+        <div id="registration-options">
+            
+            <a data-ng-href="#!/NuevaProperty/{{perfil.user.id}}/">
+            	<button class="button-crear" type="submit">Create Accommodation</button>
+            </a>
+            
+            <form data-ng-submit="perfil.functions.cerrarSesion()">
+            	<button class="button-cerrar" type="submit">Log Out</button>
+            </form>
+            
+           <!-- <form data-ng-submit="perfil.functions.editarCuenta()">
+		        <button class="button-editar" type="submit">Edit Profile</button>
+		    </form>-->
+            
+            <form data-ng-submit="perfil.functions.borrarCuenta()">
+            	<button class="button-editar" type="submit">Delete Profile</button>
+            </form>
+        </div>
+
+        <div id="misReservas-options">
+		    <a data-ng-href="#!/TerminarPagoReserva">
+		        <button class="button-reservas">My Reservations</button>
+		    </a>
+		</div>
+
+        <p class="disclaimer-text">By logging in or creating an account, you agree to our <span class="link-text">Terms and Conditions</span> and <span class="link-text">Privacy Policy</span>.</p>
         <div class="separator"></div>
         <p class="copyright-text">All rights reserved.</p>
         <p class="copyright-text">Copyright (2006-2024) - Booking.com</p>

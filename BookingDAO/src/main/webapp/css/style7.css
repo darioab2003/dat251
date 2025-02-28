@@ -7,7 +7,6 @@
 body {
     margin: 0;
     font-family: "Arial", sans-serif;
-    background-color: #f4f4f4;
 }
 
 #bannerAzul {
@@ -16,7 +15,7 @@ body {
     left: 0;
     right: 0;
     height: 80px;
-    background-color: green;
+    background-color: #004000;
 }
 
 .cabecera {
@@ -59,7 +58,7 @@ body {
 
 .inicioSesion {
     background-color: white;
-    color: rgb(7, 98, 172);
+    color: #004000;
     font-size: 15px;
     width: 150px;
     height: 40px;
@@ -76,9 +75,7 @@ body {
     margin-top: 110px;
     width: 800px;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 2%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /*background-color: rgb(255, 164, 136);*/
 }
 
 .input-group {
@@ -131,16 +128,26 @@ textarea {
     transform: scale(1.5);
 }
 
-button {
+#nuevaHabitacion,
+#guardarCambios {
     width: calc(100% - 20px);
     padding: 10px;
-    background-color: rgb(0, 64, 0);
-    color: white;
     border: none;
     cursor: pointer;
     box-sizing: border-box;
 }
 
+#nuevaHabitacion {
+    background-color: white;
+    border: 1px solid rgb(113, 113, 113);
+    color: black;
+    margin-bottom: 10px;
+}
+
+#guardarCambios {
+    background-color: #004000;
+    color: white;
+}
 
 .footer {
     position: fixed;
@@ -160,4 +167,43 @@ button {
     color: green; /* Color azul para los enlaces */
     text-decoration: none;
     margin: 0 10px; /* Márgenes entre los enlaces */
+}
+
+
+/* Estilos para la tabla */
+
+#habitaciones {
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+
+/* Estilos para las celdas de la tabla */
+
+#habitaciones th,
+#habitaciones td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+
+/* Estilos para la primera fila de la tabla (cabecera) */
+
+#habitaciones th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+
+/* Estilos para las filas impares de la tabla */
+
+#habitaciones tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+#habitaciones img {
+    display: block;
+    margin: 0 auto;
 }
