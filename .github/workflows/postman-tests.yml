@@ -1,0 +1,26 @@
+name: Postman API Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  run-postman-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar el repositorio
+        uses: actions/checkout@v3
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Instalar Newman (Postman runner)
+        run: npm install -g newman
+
+      - name: Ejecutar pruebas Postman
+        run: newman run postman/api-tests.json
