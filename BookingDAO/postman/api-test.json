@@ -59,17 +59,21 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/BookingDAO/rest/properties/38",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"BookingDAO",
-						"rest",
-						"properties",
-						"38"
+					""url": {
+						  "raw": "https://1e8e-178-232-85-127.ngrok-free.app/BookingDAO/rest/properties/38",
+						  "protocol": "https",
+						  "host": [
+						    "1e8e-178-232-85-127",
+						    "ngrok-free",
+						    "app"
+						  ],
+						  "path": [
+						    "BookingDAO",
+						    "rest",
+						    "properties",
+						    "38"
+						  ]
+						}
 					]
 				},
 				"description": "The tests in this request validate that:\n\n- the response code is 200\n- the response is a JSON object\n- the response has an 'arg' object\n- the response has 'headers' object\n- the response has a 'URL' property"
