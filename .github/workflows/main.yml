@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: API Postman Test
 
 on:
   push:
@@ -7,11 +7,11 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  test-api:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Set up Java
@@ -20,8 +20,18 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Compile Java files manually
+      - name: Set up Node (for Newman)
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Newman
+        run: npm install -g newman
+
+      - name: Start API
         run: |
-          mkdir out
-          find BookingDAO/src/main/java -name "*.java" > sources.txt
-          javac -d out @sources.txt
+          ./mvnw spring-boot:run &
+          sleep 10  # wait for the API to start
+
+      - name: Run Postman tests
+        run: newman run postman/your_collection.json
