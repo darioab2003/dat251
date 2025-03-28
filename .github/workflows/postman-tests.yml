@@ -23,4 +23,5 @@ jobs:
         run: npm install -g newman
 
       - name: Ejecutar pruebas Postman
-        run: newman run postman/api-test.json
+        run: newman run BookingDAO/postman/api-test.json
+
