@@ -34,4 +34,4 @@ jobs:
           sleep 10  # wait for the API to start
 
       - name: Run Postman tests
-        run: newman run postman/your_collection.json
+        run: newman run postman/api-test.json
