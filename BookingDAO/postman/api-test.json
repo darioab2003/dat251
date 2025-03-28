@@ -14,29 +14,8 @@
           "listen": "test",
           "script": {
             "exec": [
-              "// Validate that the response code should be 200",
-              "pm.test(\"Status code is 200\", function () {",
-              "    pm.response.to.have.status(200);",
-              "});",
-              "",
-              "// Validate that the response is json object",
-              "pm.test(\"Response is a json object\", function () {",
-              "    pm.expect(pm.response.json()).to.be.an('object');",
-              "});",
-              "",
-              "// Validate that the response has an arg object",
-              "pm.test(\"Response to have 'arg' object\", function () {",
-              "    pm.expect(pm.response.json()).to.have.property('args');",
-              "});",
-              "",
-              "// Validate that the response has headers object",
-              "pm.test(\"Response to have 'headers' object\", function () {",
-              "    pm.expect(pm.response.json()).to.have.property('headers');",
-              "});",
-              "",
-              "// Validate that the response has url property",
-              "pm.test(\"Response to have 'url' property\", function () {",
-              "    pm.expect(pm.response.json()).to.have.property('url');",
+              "pm.test(\"Status code is 204\", function () {",
+              "    pm.response.to.have.status(204);",
               "});"
             ],
             "type": "text/javascript"
@@ -70,7 +49,7 @@
             "38"
           ]
         },
-        "description": "The tests in this request validate that:\n- the response code is 200\n- the response is a JSON object\n- the response has an 'arg' object\n- the response has 'headers' object\n- the response has a 'url' property"
+        "description": "This request expects a 204 No Content response."
       },
       "response": []
     },
@@ -173,7 +152,7 @@
             "post"
           ]
         },
-        "description": "The tests in this request validate that the request body sent as form-data is valid."
+        "description": "Validates that the form data in the request body is correct."
       },
       "response": []
     }
