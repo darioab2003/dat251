@@ -1,4 +1,4 @@
-name: Run Postman Tests
+name: API Postman Test
 
 on:
   push:
@@ -20,19 +20,18 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Compile Java files
-        run: |
-          mkdir out
-          find BookingDAO/src/main/java -name "*.java" > sources.txt
-          javac -d out @sources.txt
-
-      - name: Start API (in background)
-        run: |
-          java -cp out your.MainClass &
-          sleep 10  # Give server time to start
+      - name: Set up Node (for Newman)
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
       - name: Install Newman
         run: npm install -g newman
 
+      - name: Start API
+        run: |
+          ./mvnw spring-boot:run &
+          sleep 10  # wait for the API to start
+
       - name: Run Postman tests
-        run: newman run postman/api-tests.json
+        run: newman run postman/your_collection.json
