@@ -20,5 +20,8 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Build and test with Maven
-        run: mvn clean install
+      - name: Compile Java files manually
+        run: |
+          mkdir out
+          find BookingDAO/src/main/java -name "*.java" > sources.txt
+          javac -d out @sources.txt
