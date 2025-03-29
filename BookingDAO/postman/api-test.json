@@ -102,7 +102,7 @@
           "raw": "https://585e-178-232-85-127.ngrok-free.app/BookingDAO/rest/users/19",
           "protocol": "https",
           "host": ["585e-178-232-85-127", "ngrok-free", "app"],
-          "path": ["BookingDAO", "rest", "users", "19"]
+          "path": ["BookingDAO", "rest", "users", "2"]
         }
       }
     }
