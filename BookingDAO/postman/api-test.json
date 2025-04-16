@@ -1,0 +1,110 @@
+{
+  "info": {
+    "_postman_id": "2153877c-a5b8-4cec-805e-fbe693a34745",
+    "name": "Contract Testing",
+    "description": "# About this collection\n\nThis collection helps you set up contract tests to ensure that two separate systems are compatible and can communicate with one another.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create User",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\":19,\n    \"email\":\"romualdosteven@example.com\",\n    \"password\": \"Romualdo@2123\",\n    \"name\": \"Romualdo\",\n    \"surname\":\"Steven\"\n}",
+          "options": {
+            "raw": { "language": "json" }
+          }
+        },
+        "url": {
+          "raw": "https://585e-178-232-85-127.ngrok-free.app/BookingDAO/rest/users/created",
+          "protocol": "https",
+          "host": ["585e-178-232-85-127", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "users", "created"]
+        }
+      }
+    },
+    {
+      "name": "Delete User",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 19,\n  \"email\": \"ashleymor@example.com\",\n  \"password\": \"Ashley@2123\",\n  \"name\": \"Ashley\",\n  \"surname\": \"Morado\"\n}\n",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "https://585e-178-232-85-127.ngrok-free.app/BookingDAO/rest/users/19",
+          "protocol": "https",
+          "host": ["585e-178-232-85-127", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "users", "19"]
+        }
+      }
+    },
+    {
+      "name": "Update Property",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Bergen hostal\"\n}\n",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "https://585e-178-232-85-127.ngrok-free.app/BookingDAO/rest/properties/38",
+          "protocol": "https",
+          "host": ["585e-178-232-85-127", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "properties", "38"]
+        }
+      }
+    },
+    {
+      "name": "Update User",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": 19,\n  \"email\": \"ashleymor@example.com\",\n  \"password\": \"Ashley@2123\",\n  \"name\": \"Ashley\",\n  \"surname\": \"Morado\"\n}\n",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": {
+          "raw": "https://585e-178-232-85-127.ngrok-free.app/BookingDAO/rest/users/19",
+          "protocol": "https",
+          "host": ["585e-178-232-85-127", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "users", "19"]
+        }
+      }
+    },
+    {
+      "name": "Get Property",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://585e-178-232-85-127.ngrok-free.app/BookingDAO/rest/properties/property/1",
+          "protocol": "https",
+          "host": ["585e-178-232-85-127", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "properties", "property", "1"]
+        }
+      }
+    },
+    {
+      "name": "Get User",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://585e-178-232-85-127.ngrok-free.app/BookingDAO/rest/users/19",
+          "protocol": "https",
+          "host": ["585e-178-232-85-127", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "users", "2"]
+        }
+      }
+    }
+  ]
+}
