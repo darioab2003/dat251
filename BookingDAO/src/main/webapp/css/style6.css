@@ -15,7 +15,7 @@ body {
     left: 0;
     right: 0;
     height: 80px;
-    background-color: #004000;
+    background-color:green;
 }
 
 .cabecera {
@@ -57,7 +57,7 @@ body {
 
 .inicioSesion {
     background-color: white;
-    color: #004000;
+    color:green;
     font-size: 15px;
     width: 150px;
     height: 40px;
@@ -94,14 +94,14 @@ body {
 }
 
 #pregunta_inicial_reservas {
-    color: green;
+    color:green;
     font-size: 14px;
     margin-top: 10px;
     margin-left: 730px;
 }
 
 .blue-link {
-    color: green;
+    color:green;
     /* Cambiar el color del texto a azul (#007BFF) */
     text-decoration: underline;
     /* Añadir subrayado a los enlaces */
@@ -179,7 +179,7 @@ body {
     height: 10%; 
     width: 100%;
     background-color: #d1d1d1; /* Fondo gris clarito */
-    color: green; /* Color azul para el texto y los enlaces */
+    color:green; 
     text-align: center;
     padding: 20px;
     box-sizing: border-box; /* Incluir el padding en el ancho total */
@@ -187,7 +187,7 @@ body {
 }
 
 .footer a {
-    color: green; /* Color azul para los enlaces */
+    color:green; /* Color azul para los enlaces */
     text-decoration: none;
     margin: 0 10px; /* Márgenes entre los enlaces */
 }

@@ -62,7 +62,7 @@ angular.module('Booking')
 				});
     	},
     	postUser: function(user){
-    		var url2 = url + '/created';
+    		var url2 = url + 'created';
     		return $http.post(url2, user)
     			.then(function(response){
 					return response.status;

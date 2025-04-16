@@ -15,7 +15,7 @@ body {
     left: 0;
     right: 0;
     height: 80px;
-    background-color: #1b3b94;
+    background-color:green;
 }
 
 .cabecera {
@@ -57,7 +57,7 @@ body {
 
 .inicioSesion {
     background-color: white;
-    color: #004000;
+    color: rgb(7, 98, 172);
     font-size: 15px;
     width: 150px;
     height: 40px;
@@ -99,7 +99,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: green;
+    background-color:green;
     color: white;
     display: flex;
     justify-content: center;
@@ -115,7 +115,7 @@ body {
 }
 
 .azul {
-    background-color: green;
+    background-color:green;
     color: white;
 }
 
@@ -207,7 +207,7 @@ body {
     margin-top: 2px;
     width: 22px;
     height: 17px;
-    background-color: green;
+    background-color:green;
     color: #fff;
     padding: 5px;
     margin-right: 10px;
@@ -327,7 +327,7 @@ body {
 }
 
 #eleccion {
-    color: green;
+    color:green;
 }
 
 .bottom-div {
@@ -426,7 +426,7 @@ body {
 }
 
 .blue-link {
-    color: green;
+    color:green;
     /* Cambiar el color del texto a azul (#007BFF) */
     text-decoration: underline;
     /* Añadir subrayado a los enlaces */
@@ -587,7 +587,7 @@ label {
     height: 10%; 
     width: 100%;
     background-color: #d1d1d1; /* Fondo gris clarito */
-    color: green; /* Color azul para el texto y los enlaces */
+    color:green; 
     text-align: center;
     padding: 20px;
     box-sizing: border-box; /* Incluir el padding en el ancho total */
@@ -595,7 +595,7 @@ label {
 }
 
 .footer a {
-    color: green; /* Color azul para los enlaces */
+    color:green; 
     text-decoration: none;
     margin: 0 10px; /* Márgenes entre los enlaces */
 }
@@ -608,6 +608,6 @@ label {
     border: none;
     cursor: pointer;
     box-sizing: border-box;
-    background-color: #004000;
+    background-color:green;
     color: white;
 }

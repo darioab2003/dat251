@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="../css/dejarValoracion.css">
+<div class="container">
+    <div class="feedback">
+        <h2>New Review</h2>
+        <div class="informacion-extra1">
+            <p>This comment will be public</p>
+            <img src="../img/informacion.png" alt="Información">
+        </div>
+        <form name="reviewForm">
+            <div class="input-group" data-ng-class="{'has-error': reviewForm.valoracion.$invalid && reviewForm.valoracion.$touched}">
+                <label for="valoracion">Rating (from 1 to 5)</label>
+                <input type="number" id="valoracion" name="valoracion" min="1" max="5" data-ng-model="review.review.grade" required>
+                <div data-ng-show="reviewForm.valoracion.$invalid && reviewForm.valoracion.$touched">
+                    <div class="error-message">Incorrect rating: The rating must be a number between 1 and 5.</div>
+                </div>
+            </div>
+            <div class="input-group" data-ng-class="{'has-error': reviewForm.descripcion.$invalid && reviewForm.descripcion.$touched}">
+                <label for="descripcion">Comment</label>
+                <textarea id="descripcion" name="descripcion" rows="4" cols="50" data-ng-model="review.review.review" required></textarea>
+                <div data-ng-show="reviewForm.descripcion.$invalid && reviewForm.descripcion.$touched">
+                    <div class="error-message">Empty comment: A comment is required.</div>
+                </div>
+            </div>
+            <div class="button-group">
+                <button class="btn" type="submit" data-ng-click="review.functions.crearReview()" data-ng-disabled="reviewForm.$invalid">Submit Review</button>
+                <button class="btn" type="submit" data-ng-click="review.functions.cancelar()">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    <a href="#">About Booking.com</a>
+    <a href="#">Customer Service</a>
+    <a href="#">Terms and Conditions</a>
+    <a href="#">Privacy and Cookies Policy</a>
+    <a href="#">Manage Personalized Recommendations</a>
+</div>

@@ -1,49 +1,51 @@
 <div class="container">
     <nav>
-        <div class="nav-rectangle">
-            <div class="filter-option">
-                <img src="../img/coche.png" alt="Where are you going?">
-                <input type="text" name="destino" placeholder="Where are you going?" style="width: 150px;" data-ng-model="destino">
-            </div>
-            <div class="filter-option">
-                <img src="../img/calendario.png" alt="Check-in Date - Check-out Date">
-                <input type="date" name="fecha_entrada">
-                <input type="date" name="fecha_salida">
-            </div>
-            <div class="filter-option">
-                <img src="../img/usuario.png" alt="2 adults - 0 children - 1 room">
-                <input type="number" name="adultos" placeholder="Adults" style="width: 60px;">
-                <input type="number" name="niños" placeholder="Children" style="width: 80px;">
-                <input type="number" name="habitaciones" placeholder="Rooms" style="width: 100px;">
-            </div>
-            <a data-ng-href="#!/ListaProperties?destino={{destino}}">
-                <button id="search-button" type="submit">Search</button>
-            </a>
-        </div>
-    </nav>
+      <div class="nav-rectangle">
+          <div class="filter-option">
+              <img src="../img/coche.png" alt="Where are you going?">
+              <input type="text" name="destino" placeholder="Where are you going?" style="width: 150px;" data-ng-model="destino">
+           </div>
+           <div class="filter-option">
+              <img src="../img/calendario.png" alt="Check-in Date - Check-out Date">
+              <input type="date" name="fecha_entrada">
+              <input type="date" name="fecha_salida">
+           </div>
+           <div class="filter-option">
+              <img src="../img/usuario.png" alt="2 adults - 0 children - 1 room">
+              <input type="number" name="adultos" placeholder="Adults" style="width: 60px;">
+              <input type="number" name="niños" placeholder="Children" style="width: 80px;">
+              <input type="number" name="habitaciones" placeholder="Rooms" style="width: 100px;">
+           </div>
+           <a data-ng-href="#!/ListaProperties?destino={{destino}}">
+	           <button id="search-button" type="submit">Search</button>
+	       </a>
+      </div>
+  </nav>
 
     <div class="content-container">
         <!-- Your content goes here -->
 
         <section class="checkbox-section">
-            <input type="checkbox" id="viajeTrabajo"><label for="viajeTrabajo">I’m traveling for work</label>
-            <input type="checkbox" id="BuscarVuelos"><label for="BuscarVuelos">I’m looking for flights</label>
+            <input type="checkbox" id="viajeTrabajo">
+            <label for="viajeTrabajo">Traveling for work</label>
+            <input type="checkbox" id="BuscarVuelos">
+            <label for="BuscarVuelos">Looking for flights</label>
         </section>
 
         <section class="ofertas">
-            <h2>Deals</h2>
-            <p>Promotions, discounts, and special offers for you</p>
+            <h2>Offers</h2>
+            <p>Promotions, discounts and special offers just for you</p>
 
             <div class="ofertas-container">
                 <div class="oferta">
                     <h3>Enjoy longer vacations:</h3>
-                    <p>Find accommodations that offer extended stays, many with reduced monthly rates.</p>
+                    <p>Search for accommodations offering long stays; many offer discounted monthly rates.</p>
                     <img src="../img/oferta.jpg" alt="Offer 1">
                     <button class="estancia">Choose your stay</button>
                 </div>
                 <div class="oferta">
-                    <h3>Fly to your dream destination</h3>
-                    <p>Get inspired, compare, and book flights with more flexibility.</p>
+                    <h3>Fly to the destination of your dreams</h3>
+                    <p>Get inspired, compare and book flights with greater flexibility</p>
                     <img src="../img/avion.JPG" alt="Offer 2">
                     <button class="estancia">Search flights</button>
                 </div>
@@ -88,7 +90,7 @@
         </section>
 
         <section class="BuscarAlojamiento">
-            <h2>Search by type of accommodation</h2>
+            <h2>Search by Accommodation Type</h2>
 
             <div class="tipoAlojamiento-container">
                 <div class="tipoAlojamiento">
@@ -111,12 +113,12 @@
         </section>
 
         <section class="destinosGustosos">
-            <h2>Our favorite destinations</h2>
+            <h2>Our Favorite Destinations</h2>
 
             <div class="botones-container">
                 <button class="boton" onclick="activarBoton(this)">Regions</button>
                 <button class="boton" onclick="activarBoton(this)">Cities</button>
-                <button class="boton" onclick="activarBoton(this)">Points of interest</button>
+                <button class="boton" onclick="activarBoton(this)">Points of Interest</button>
             </div>
 
             <table>
@@ -142,7 +144,7 @@
                     <td><strong>Bora Bora</strong><br>59 accommodations</td>
                 </tr>
                 <tr>
-                    <td><strong>North Sierra of Madrid</strong><br>158 accommodations</td>
+                    <td><strong>Northern Madrid</strong><br>158 accommodations</td>
                     <td><strong>Almería Coast</strong><br>2,018 accommodations</td>
                     <td><strong>Tenerife</strong><br>9,632 accommodations</td>
                     <td><strong>Ibiza</strong><br>1,660 accommodations</td>
@@ -156,7 +158,7 @@
 <div class="footer">
     <div class="footer-text">
         <p id="ahorraTiempo">Save time and money!</p>
-        <p>Sign up and we'll send you the best deals for you.</p>
+        <p>Sign up and we'll send you the best offers for you.</p>
     </div>
 
     <form>

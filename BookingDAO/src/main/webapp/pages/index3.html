@@ -8,7 +8,7 @@
                     <input type="text" name="destino" placeholder="Where are you going?" style="width: 150px;" data-ng-model="destino">
                 </div>
                 <div class="filter-option">
-                    <img src="../img/calendario.png" alt="Check-in date - Check-out date">
+                    <img src="../img/calendario.png" alt="Check-in Date - Check-out Date">
                     <input type="date" name="fecha_entrada">
                     <input type="date" name="fecha_salida">
                 </div>
@@ -23,12 +23,13 @@
         </nav>
     </form>
 
-    <p>Home > Spain > Extremadura > Caceres > Search results</p>
+    <p>Home > Spain > Extremadura > Cáceres > Search Results</p>
 
     <div class="sections">
         <div class="left-section">
+
             <div class="top-div">
-                <button class="ver-mapa-button">View on map</button>
+                <button class="ver-mapa-button">View on Map</button>
                 <img src="../img/mapa.jpg" alt="Map">
             </div>
 
@@ -41,7 +42,7 @@
                 <div class="separador-linea"></div>
 
                 <div class="filtros-populares">
-                    <p>Popular filters:</p>
+                    <p>Popular Filters:</p>
 
                     <div class="checkbox-filtros">
                         <input type="checkbox" name="checkbox1" value="hoteles">
@@ -60,10 +61,10 @@
 
                     <div class="checkbox-filtros">
                         <input type="checkbox" name="checkbox3" value="hoteles">
-                        <p>Fantastic: 9 or more</p>
+                        <p>Fantastic: 9 or higher</p>
                     </div>
 
-                    <p id="fantastico">Based on guest reviews</p>
+                    <p id="fantastico">Based on customer reviews</p>
 
                     <div class="checkbox-filtros">
                         <input type="checkbox" name="checkbox3" value="hoteles">
@@ -87,7 +88,6 @@
                 </div>
             </div>
         </div>
-
         <div class="right-section">
             <p>Cáceres: 44 accommodations found</p>
 
@@ -104,14 +104,14 @@
 
             <div class="informacion-extra1">
                 <img src="../img/informacion.png" alt="Information">
-                <p>79% of accommodations are no longer available on our website for these dates.</p>
+                <p>79% of the accommodations are no longer available on our website for those dates.</p>
                 <img src="../img/cruz.png" alt="Close">
             </div>
             <div class="informacion-extra2">
-                <p>The commission accommodations pay for bookings and other factors may influence their ranking position. Learn more about ranking parameters and how to select and modify them. <span class="mas-informacion-link">More information</span></p>
+                <p>The commission paid for accommodations by bookings and other factors can influence their ranking. Find out more about the ranking parameters and how to select and modify them. <span class="mas-informacion-link">More information</span></p>
                 <img src="../img/cruz.png" alt="Close">
             </div>
-
+            
             <div data-ng-repeat="property in properties">
                 <div class="alojamiento1">
                     <div class="alojamiento1-img">
@@ -126,11 +126,11 @@
                         <p id="tituloAlojamiento">{{property.name}}<img src="../img/estrellitas.JPG" alt="stars"></p>
                         <p id="alojamientoLocalizacion">
                             <span class="mas-informacion-link">{{property.city}}</span>
-                            <span class="mas-informacion-link">Show on map</span> {{property.centerDistance}} m from the center
+                            <span class="mas-informacion-link">Show on Map</span> - {{property.centerDistance}} m from the center
                         </p>
                         <img id="hojas" src="../img/hojas.JPG" alt="Leaves">
                         <p id="habitacion-info">{{property.description}}</p>
-                        <p id="cama-info">Beds: 1 double or 2 single</p>
+                        <p id="cama-info">Beds: 1 double or 2 singles</p>
                         <p id="aviso-info">
                             Rooms available: 
                             <span data-ng-if="property.available == 1">yes</span>
@@ -146,10 +146,10 @@
                         <p id="ubicacion">Location 9.6</p>
                         <p id="noches">2 nights, 2 adults</p>
                         <p id="precio">€ 285</p>
-                        <p id="impuestos">Includes taxes and charges</p>
-
+                        <p id="impuestos">Includes taxes and fees</p>
+	
                         <div class="Disponibilidad">
-                            <button id="verDisponibilidadBtn" class="verDisponibilidad" type="submit" data-ng-click="verDisponibilidad(property.id)">Check availability</button>
+                            <button id="verDisponibilidadBtn" class="verDisponibilidad" type="submit" data-ng-click="verDisponibilidad(property.id)">View availability</button>
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
     <div class="footer">
         <div class="footer-text">
             <p id="ahorraTiempo">Save time and money!</p>
-            <p>Sign up and we'll send you the best deals.</p>
+            <p>Sign up and we'll send you the best offers for you.</p>
         </div>
 
         <form>
@@ -168,8 +168,6 @@
             <button type="submit" class="subscribe-button">Subscribe!</button>
         </form>
     </div>
-</div>
-
 
     <script>
         const presupuestoInput = document.getElementById('presupuesto');
@@ -177,20 +175,20 @@
 
         presupuestoInput.addEventListener('input', () => {
             const valorPresupuesto = presupuestoInput.value;
-            cantidadDinero.textContent = {valorPresupuesto};
+            cantidadDinero.textContent = `$${valorPresupuesto}`;
         });
 
         function activarBoton(boton) {
-            // Desactivar todos los botones
+            // Deactivate all buttons
             let botones = document.querySelectorAll('.boton');
             botones.forEach(b => b.classList.remove('activado'));
 
-            // Activar el botón clicado
+            // Activate the clicked button
             boton.classList.add('activado');
         }
 
         document.getElementById('verDisponibilidadBtn').addEventListener('click', function() {
-            // Redirige a la página index4.html
+            // Redirect to the index4.html page
             window.location.href = 'index4.html';
         });
     </script>

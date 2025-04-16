@@ -1,43 +1,43 @@
 <link rel="stylesheet" href="../css/style7.css">
 <div class="container">
-    <form data-ng-submit="alojamiento.functions.editarProperty()">
+	<form data-ng-submit="alojamiento.functions.editarProperty()">
         	
-        <div class="input-group">
-            <label for="nombreAlojamiento">Accommodation Name</label>
-            <input type="text" id="name" name="name" data-ng-model="alojamiento.property.name" required>
-        </div>
-        
-        <div class="input-group">
-            <label for="direccion">City</label>
-            <input type="text" id="city" name="city" data-ng-model="alojamiento.property.city" required>
-        </div>
-        
-        <div class="input-group">
-            <label for="direccion">Address</label>
-            <input type="text" id="address" name="address" data-ng-model="alojamiento.property.address" required>
-        </div>
-        
-        <div class="input-group">
-            <label for="telefono">Phone</label>
-            <input type="tel" id="telephone" name="telephone" data-ng-model="alojamiento.property.telephone" required>
-        </div>
-        
-        <div class="input-group">
-            <label for="distanciaCentro">Distance to city center (km)</label>
-            <input type="text" id="centerDistance" name="centerDistance" data-ng-model="alojamiento.property.centerDistance" required>
-        </div>
-        
-        <div class="input-group">
-            <label for="valoracion">Average rating</label>
-            <input type="text" id="gradesAverage" name="gradesAverage" data-ng-model="alojamiento.property.gradesAverage" required>
-        </div>
-        
-        <div class="input-group">
-            <label for="descripcion">Description</label>
-            <input type="text" id="description" name="description" data-ng-model="alojamiento.property.description" required>
-        </div>
+        	<div class="input-group">
+		   		<label for="nombreAlojamiento">Accommodation Name</label>
+		    	<input type="text" id="name" name="name" data-ng-model="alojamiento.property.name" required>
+			</div>
+			
+			<div class="input-group">
+			    <label for="direccion">City</label>
+			    <input type="text" id="city" name="city" data-ng-model="alojamiento.property.city" required>
+			</div>
+			
+			<div class="input-group">
+			    <label for="direccion">Address</label>
+			    <input type="text" id="address" name="address" data-ng-model="alojamiento.property.address" required>
+			</div>
+			
+			<div class="input-group">
+			    <label for="telefono">Telephone</label>
+			    <input type="tel" id="telephone" name="telephone" data-ng-model="alojamiento.property.telephone" required>
+			</div>
+			
+			<div class="input-group">
+			    <label for="distanciaCentro">Distance to the Center (in km)</label>
+			    <input type="text" id="centerDistance" name="centerDistance" data-ng-model="alojamiento.property.centerDistance" required>
+			</div>
+			
+			<div class="input-group">
+			    <label for="valoracion">Average Rating</label>
+			    <input type="text" id="gradesAverage" name="gradesAverage" data-ng-model="alojamiento.property.gradesAverage" required>
+			</div>
+			
+			<div class="input-group">
+			    <label for="descripcion">Description</label>
+			    <input type="text" id="description" name="description" data-ng-model="alojamiento.property.description" required>
+			</div>
 
-        <p>Services and amenities offered:</p>
+         <p>Services or facilities offered:</p>
         <div class="instalaciones">
             <div class="checkbox-option">
                 <input type="checkbox" id="TV" name="TV" data-ng-model="alojamiento.property.TV" data-ng-true-value="'1'" data-ng-false-value="'0'">
@@ -48,16 +48,16 @@
                 <label for="aireAcondicionado">Air Conditioning</label>
             </div>
         </div>
-        
-        <p>Availability:</p>
+		
+		<p>Availability:</p>
         <div class="instalaciones">
             <div class="checkbox-option">
                 <input type="checkbox" id="available" name="available" data-ng-model="alojamiento.property.available" data-ng-true-value="'1'" data-ng-false-value="'0'">
                 <label for="available">Available</label>
             </div>
         </div>
-        
-        <p>Pet friendly?</p>
+		
+        <p>Pet Friendly?</p>
         <div class="instalaciones">
             <div class="checkbox-option">
                 <input type="checkbox" id="petFriendly" name="petFriendly" data-ng-model="alojamiento.property.petFriendly" data-ng-true-value="'1'" data-ng-false-value="'0'">
@@ -93,15 +93,16 @@
 	                    </a>
                     </td>
                 </tr>
+                <!-- Add additional rows as needed -->
             </tbody>
         </table>
 		
-        <a data-ng-href="#!/NuevaAccommodation/{{alojamiento.property.id}}/">
-            <button id="nuevaHabitacion" type="submit">New Room</button>
-        </a>
+		<a data-ng-href="#!/NuevaAccommodation/{{alojamiento.property.id}}/">
+        	<button id="nuevaHabitacion" type="submit">New Room</button>
+		</a>
 		
-        <button id="guardarCambios" type="submit">Save Changes</button>
-    </form>	
+		<button id="guardarCambios" type="submit">Save Changes</button>
+     </form>	
 </div>
 
 <div class="footer">

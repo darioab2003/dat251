@@ -11,7 +11,7 @@ body {
     left: 0;
     right: 0;
     height: 80px;
-    background-color: #004000;
+    background-color: #28a745;
 }
 
 .cabecera {
@@ -60,7 +60,7 @@ body {
 
 .btn {
     display: inline-block;
-    background-color: green;
+    background-color: #28a745; 
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -73,7 +73,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #004000;
+    background-color: #1e7e34; 
 }
 
 .footer {
@@ -82,16 +82,16 @@ body {
     left: 0;
     height: 10%; 
     width: 100%;
-    background-color: #d1d1d1; /* Fondo gris clarito */
-    color: green; /* Color azul para el texto y los enlaces */
+    background-color: #d1d1d1;
+    color: #28a745; 
     text-align: center;
     padding: 20px;
-    box-sizing: border-box; /* Incluir el padding en el ancho total */
-    z-index: 1000; /* Ajustar el z-index según la necesidad */
+    box-sizing: border-box;
+    z-index: 1000;
 }
 
 .footer a {
-    color: green; /* Color azul para los enlaces */
+    color: #28a745; 
     text-decoration: none;
-    margin: 0 10px; /* Márgenes entre los enlaces */
+    margin: 0 10px;
 }

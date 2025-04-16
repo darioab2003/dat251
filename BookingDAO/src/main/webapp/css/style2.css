@@ -106,7 +106,7 @@ nav {
 }
 
 #search-button {
-    background-color: green;
+    background-color:green;
     color: white;
     font-size: 20px;
     width: 130px;
@@ -182,7 +182,7 @@ nav {
 }
 
 .estancia {
-    background-color: green;
+    background-color:green;
     color: white;
     font-size: 20px;
     width: 200px;
@@ -371,7 +371,7 @@ td {
 }
 
 .footer {
-    background-color: #004000;
+    background-color:green;
     height: 220px;
     color: white;
     text-align: center;
@@ -404,14 +404,14 @@ td {
     height: 50px;
     width: 150px;
     font-size: 18px;
-    background-color: green;
+    background-color:green;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 .registroSesion {
-    background-color: #004000;
+    background-color:green;
     height: 40px;
     color: white;
     text-align: center;
@@ -420,7 +420,7 @@ td {
 
 .usuarioActivo {
     margin-top: 50px;
-    background-color: #004000;
+    background-color:green;
     height: 40px;
     color: white;
     padding: 20px;

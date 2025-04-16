@@ -1,0 +1,168 @@
+<link rel="stylesheet" href="../css/style5.css">
+<div class="container">
+    <div class="pasosCarrito">
+        <div class="paso">
+            <div class="circulo azul">✓</div>
+            <p class="textoPaso">Your selection</p>
+        </div>
+        <hr class="linea">
+        <div class="paso">
+            <div class="circulo azul">2</div>
+            <p class="textoPaso">Your details</p>
+        </div>
+        <hr class="linea">
+        <div class="paso">
+            <div class="circulo blanco">3</div>
+            <p class="textoPaso">Last step</p>
+        </div>
+    </div>
+    <div class="sections" data-ng-controller="controladorBooking">
+        <div class="left-section">
+            <div class="top-div">
+                <p id="hotel">Hotel<img src="../img/estrellitas.JPG" alt="Stars"></p>
+                <h3>{{reserva.property.name}}</h3>
+                <p id="ubicacion">{{reserva.property.description}}</p>
+                <p id="valoracionUbicacion">Excellent location - 9.6</p>
+                <div class="valoracion">
+                    <div class="valoracion-numerica">8,7</div>
+                    <p>Fabulous. 4559 reviews</p>
+                </div>
+                <div class="servicios">
+                    <div class="requisitosPopulares">
+                        <div class="populares"><img src="../img/mascotas.png" alt="Pet Friendly">Pet friendly</div>
+                        <div class="populares"><img src="../img/wifi.png" alt="WiFi">WiFi</div>
+                        <div class="populares"><img src="../img/parking.png" alt="Parking">Parking</div>
+                    </div>
+                    <div class="requisitosPopulares">
+                        <div class="populares"><img src="../img/restaurante.png" alt="Restaurant">Restaurant</div>
+                    </div>
+                </div>
+            </div>
+            <div class="medium-div">
+                <h3>Your reservation details</h3>
+                <div class="reserva">
+                    <div class="entradaSalida">
+                        <p>Check-in</p>
+                        <p class="fecha">Fri, 26 Jan 2024</p>
+                        <p class="hora">From 15:00</p>
+                    </div>
+                    <div class="separador"></div>
+                    <div class="entradaSalida">
+                        <p>Check-out</p>
+                        <p class="fecha">Sun, 28 Jan 2024</p>
+                        <p class="hora">07:00 - 12:00</p>
+                    </div>
+                </div>
+                <p id="duracion">Total length of stay:</p>
+                <p id="noches">2 nights</p>
+                <div class="separador-linea"></div>
+                <p>You have selected</p>
+                <p id="seleccion">{{accommodation.numSelected}} room(s) for 2 adults</p>
+                <p id="eleccion"><a href="#" class="blue-link">Change your selection</a></p>
+            </div>
+            <div class="bottom-div">
+                <h3>Price breakdown</h3>
+                <div class="importeTotal">
+                    <p id="total">Total</p>
+                    <p id="cantidad">{{totalPrice}}$</p>
+                    <p id="impuestos">Includes taxes and fees</p>
+                </div>
+                <h3>Price information</h3>
+                <div class="impuestosCargos">
+                    <img src="../img/billete.png" alt="Bill">Includes €25.91 in taxes and fees
+                </div>
+                <p id="iva">10% VAT</p>
+                <p id="dineroIva">€25.91</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <div class="top-divRight">
+                Sign in <img src="../img/usuario.png" alt="User"><a href="#" class="blue-link">Sign in</a> to book with your saved details or <a href="#" class="blue-link">create an account</a> to manage your bookings on the go!
+            </div>
+            <div class="introduceTusDatos">
+                <h1>Enter your details</h1>
+                <div class="rellenarCampos">
+                    <img src="../img/informacion.png" alt="Information">You're almost there! Just fill in the fields marked with *
+                </div>
+                <div class="cuestionario">
+                    <div class="casilla">
+                        <label for="nombre">Name*</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Enter your name" class="inputAncho" data-ng-model="reserva.user.name" required>
+                    </div>
+
+                    <div class="casillaApellido">
+                        <label for="apellido">Surname*</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Enter your surname" class="inputAncho" data-ng-model="reserva.user.surname">
+                    </div>
+
+                    <div class="casillaEmail">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" class="inputAncho" data-ng-model="reserva.user.email">
+                    </div>
+                    <p>The confirmation email will be sent to this address.</p>
+
+                    <div class="casillaPais">
+                        <label for="pais">Country/Region*</label>
+                        <select id="pais" name="pais" class="inputAncho">
+                            <option value="espana">Spain</option>
+                        </select>
+                    </div>
+
+                    <div class="casillaTelefono">
+                        <label for="telefono">Telephone (preferably mobile)*</label>
+                        <div class="telefonoInput">
+                            <input type="text" id="telefono" name="telefono" placeholder="+34" class="inputAncho" required>
+                        </div>
+                    </div>
+                    <p>The accommodation requires it to validate your reservation.</p>
+                </div>
+                <section class="checkbox-section">
+                    <input type="checkbox">
+                    <label>Yes, I want to receive the free digital confirmation (recommended)</label>
+                </section>
+                <p id="sms">We will send you a link via SMS to download the app</p>
+                <div class="separador-linea"></div>
+
+                <div class="checkboxAdicional">
+                    <p>Who is this reservation for?</p>
+                    <div class="checkboxReserva">
+                        <input type="checkbox" id="paraMi" name="paraMi">
+                        <label for="paraMi">The reservation is for me</label>
+                    </div>
+                    <div class="checkboxReserva">
+                        <input type="checkbox" id="paraOtraPersona" name="paraOtraPersona">
+                        <label for="paraOtraPersona">The reservation is for someone else</label>
+                    </div>
+                    <p>Are you traveling for work?</p>
+                    <div class="checkboxSiNo">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="siCheckbox" name="siCheckbox">
+                            <label for="siCheckbox">Yes</label>
+                        </div>
+
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="noCheckbox" name="noCheckbox">
+                            <label for="noCheckbox">No</label>
+                        </div>
+                    </div>
+                    <button id="pagarAlojamiento" type="submit" data-ng-click="confirmarPago()">Pay</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <a href="#">About Booking.com</a>
+    <a href="#">Customer Service</a>
+    <a href="#">Terms and Conditions</a>
+    <a href="#">Privacy and Cookies Policy</a>
+    <a href="#">Manage Personalized Recommendations</a>
+</div>
+
+<script>
+    document.getElementById('inicioSesion').addEventListener('click', function() {
+        // Redirect to the index5.html page
+        window.location.href = 'index6.html';
+    });
+</script>

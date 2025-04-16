@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="../css/confirmarPagoReserva.css">
+<div class="container">
+    <div class="confirmation">
+        <h2>Payment Confirmed</h2>
+        <p>Thank you for your reservation, {{reserva.user.name}} </p>
+    </div>
+</div>
+<div class="container2" data-ng-controller="controladorConfirmarPagoReserva">
+    <div class="detallesReserva">
+        <h3>Reservation Details</h3>
+
+        <table id="informacionReserva">
+            <thead>
+                <tr>
+                    <th class="listaFavoritos">Room ID</th>
+                    <th class="listaFavoritos">Number of Rooms</th>
+                    <th class="listaFavoritos">Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="listaFavoritos">{{accommodation.id}}</td>
+                    <td class="listaFavoritos">{{accommodation.numSelected}}</td>
+                    <td class="listaFavoritos">{{totalPrice}}$</td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn" type="submit" data-ng-click="confirmReservation()">Continue</button>
+    </div>
+</div>
+
+<div class="footer">
+    <a href="#">About Booking.com</a>
+    <a href="#">Customer Service</a>
+    <a href="#">Terms and Conditions</a>
+    <a href="#">Privacy and Cookies Policy</a>
+    <a href="#">Manage Personalized Recommendations</a>
+</div>

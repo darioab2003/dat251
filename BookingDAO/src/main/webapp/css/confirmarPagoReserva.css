@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#bannerAzul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: #28a745; /* Changed from #1b3b94 to green */
+}
+
+.cabecera {
+    position: relative;
+    margin: 10px auto;
+    width: 1150px;
+    /*background-color: rgba(221, 231, 241, 0.103);*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera h3 {
+    font-size: 25px;
+    margin-top: 13px;
+    margin-right: 280px;
+    color: white;
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.confirmation h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.confirmation p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.container2 {
+    max-width: 600px;
+    margin-top: -80px;
+    margin-left: 746px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.detallesReserva {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.detallesReserva h3 {
+    color: #333;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.detallesReserva p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+#informacionReserva {
+    width: 60%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 110px;
+    margin-bottom: 20px;
+}
+
+/* Table cell styles */
+#informacionReserva th,
+#informacionReserva td {
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 15px;
+}
+
+/* Header row styles */
+#informacionReserva th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+/* Odd row styles */
+#informacionReserva tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #28a745; /* Changed from #1b3b94 to green */
+    color: #fff;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    margin-right: 22px;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+}
+
+.btn:hover {
+    background-color: #1e7e34; /* Changed from #0056b3 to a darker green */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 10%; 
+    width: 100%;
+    background-color: #d1d1d1; /* Light gray background */
+    color: #28a745; /* Changed from blue (#007BFF) to green */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in total width */
+    z-index: 1000;
+}
+
+.footer a {
+    color: #28a745; /* Changed from blue (#007BFF) to green */
+    text-decoration: none;
+    margin: 0 10px;
+}

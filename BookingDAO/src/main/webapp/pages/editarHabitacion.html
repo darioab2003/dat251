@@ -1,28 +1,28 @@
-<link rel="stylesheet" href="../css/editRoom.css">
+<link rel="stylesheet" href="../css/editarHabitacion.css">
 <div class="container">
 
-    <form data-ng-submit="room.functions.editAccommodation()">
+    <form data-ng-submit="habitacion.functions.editarAccommodation()">
         <div class="input-group">
-            <label for="accommodationName">Accommodation Name</label>
-            <input type="text" id="accommodationName" name="name" data-ng-model="room.accommodation.name" required>
+            <label for="nombreAlojamiento">Accommodation Name</label>
+            <input type="text" id="nombreAlojamiento" name="name" data-ng-model="habitacion.accommodation.name" required>
         </div>
 
         <div class="input-group">
-            <label for="description">Room Description</label>
-            <input type="text" id="description" name="description" data-ng-model="room.accommodation.description" required>
+            <label for="descripcion">Room Description</label>
+            <input type="text" id="descripcion" name="description" data-ng-model="habitacion.accommodation.description" required>
         </div>
 
         <div class="input-group">
-            <label for="price">Price per Night</label>
-            <input type="number" id="price" name="price" data-ng-model="room.accommodation.price" required>
+            <label for="precio">Price per Night</label>
+            <input type="number" id="precio" name="price" data-ng-model="habitacion.accommodation.price" required>
         </div>
 
         <div class="input-group">
-            <label for="rooms">Number of Rooms</label>
-            <input type="number" id="rooms" name="numAccommodations" data-ng-model="room.accommodation.numAccommodations" required>
+            <label for="habitaciones">Number of Rooms</label>
+            <input type="number" id="habitaciones" name="numAccommodations" data-ng-model="habitacion.accommodation.numAccommodations" required>
         </div>
 
-        <button id="saveChanges" type="submit">Save Changes</button>
+        <button id="guardarCambios" type="submit">Save Changes</button>
     </form>
 </div>
 
@@ -30,6 +30,6 @@
     <a href="#">About Booking.com</a>
     <a href="#">Customer Service</a>
     <a href="#">Terms and Conditions</a>
-    <a href="#">Privacy & Cookie Policy</a>
+    <a href="#">Privacy and Cookies Policy</a>
     <a href="#">Manage Personalized Recommendations</a>
 </div>

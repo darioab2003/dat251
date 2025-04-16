@@ -10,7 +10,7 @@ body {
 
 #bannerAzul {
     height: 80px;
-    background-color: green;
+    background-color:green;
 }
 
 #encuentraEstancia {
@@ -48,7 +48,7 @@ body {
 
 .inicioSesion {
     background-color: white;
-    color: rgb(7, 98, 172);
+    color:green;
     font-size: 15px;
     width: 150px;
     height: 40px;
@@ -107,7 +107,7 @@ body {
 .submit-button {
     width: 100%;
     margin: 10px auto;
-    background-color: green;
+    background-color:green;
     /* Color de fondo azul */
     color: #fff;
     /* Color de texto blanco */
@@ -122,7 +122,7 @@ body {
 }
 
 .submit-button:hover {
-    background-color: rgb(0, 64, 0);
+    background-color:green;
     /* Cambia el color de fondo al pasar el cursor sobre el botón */
 }
 
@@ -194,7 +194,7 @@ body {
 }
 
 .link-text {
-    color: blue;
+    color:green;
     text-decoration: underline;
     /* Puedes agregar subrayado si quieres que parezca más un enlace */
 }

@@ -4,11 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Nacho Alcalde">
-    <title>Project Dat251</title>
+    <title>Booking.com</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../img/icono.svg">
-	
-	
+    
     <!-- Include the AngularJS library -->
     <script src="../js/angular/angular.js"></script>
     <script src="../js/angular/angular-route.js"></script>
@@ -41,27 +40,49 @@
     <header>
         <div id="bannerAzul">
             <div class="cabecera" data-ng-controller="controladorInicio as inicio">
-               <h3>Project Dat251</h3>
+               <h3>Booking.com</h3>
 
                 <p id="EUR">EUR</p>
 
-                <div id="icono1" class="iconosInicioSesion"><img src="../img/bandera.png" alt="Bandera" width="30"></div>
-                <div id="icono2" class="iconosInicioSesion"><img src="../img/ayudaWhite.png" alt="Ayuda" width="30"></div>
+                <div id="icono1" class="iconosInicioSesion">
+                    <img src="../img/bandera.png" alt="Flag" width="30">
+                </div>
+                <div id="icono2" class="iconosInicioSesion">
+                    <img src="../img/ayudaWhite.png" alt="Help" width="30">
+                </div>
 
-                <p>Register accommodation</p>
+                <p>List Your Property</p>
 
-                <a href="../LoginServlet.do" data-ng-show="inicio.user.email === undefined" ><button class="inicioSesion">Log in</button></a>
-                <a data-ng-href="#!/Perfil/{{inicio.user.id}}/" data-ng-show="inicio.user.email !== undefined" ><button class="inicioSesion">Profile</button></a>
-                <a href="#!/Registro"><button class="inicioSesion" data-ng-show="inicio.user.email === undefined">Create account</button></a>
+                <a href="../LoginServlet.do" data-ng-show="inicio.user.email === undefined">
+                    <button class="inicioSesion">Sign In</button>
+                </a>
+                <a data-ng-href="#!/Perfil/{{inicio.user.id}}/" data-ng-show="inicio.user.email !== undefined">
+                    <button class="inicioSesion">Profile</button>
+                </a>
+                <a href="#!/Registro">
+                    <button class="inicioSesion" data-ng-show="inicio.user.email === undefined">Create an Account</button>
+                </a>
             </div>
 
             <div class="botones-container">
-                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/alojamientoWhite.png" alt="Alojamiento">Accommodation</button>
-                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/vueloWhite.png" alt="Vuelos">Flights</button>
-                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/hotelWhite.png" alt="Vuelo + Hotel">Flight + Hotel</button>
-                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/cocheWhite.png" alt="Alquiler de coches">Car renting</button>
-                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/noriaWhite.png" alt="Atracciones turísticas">Tourist attractions</button>
-                <button class="boton" onclick="activarBoton(this)"><img class="iconoBotones" src="../img/taxiWhite.png" alt="Taxis aeropuerto">Airport taxis</button>
+                <button class="boton" onclick="activarBoton(this)">
+                    <img class="iconoBotones" src="../img/alojamientoWhite.png" alt="Property">Property
+                </button>
+                <button class="boton" onclick="activarBoton(this)">
+                    <img class="iconoBotones" src="../img/vueloWhite.png" alt="Flights">Flights
+                </button>
+                <button class="boton" onclick="activarBoton(this)">
+                    <img class="iconoBotones" src="../img/hotelWhite.png" alt="Flight + Hotel">Flight + Hotel
+                </button>
+                <button class="boton" onclick="activarBoton(this)">
+                    <img class="iconoBotones" src="../img/cocheWhite.png" alt="Car Rental">Car Rental
+                </button>
+                <button class="boton" onclick="activarBoton(this)">
+                    <img class="iconoBotones" src="../img/noriaWhite.png" alt="Attractions">Attractions
+                </button>
+                <button class="boton" onclick="activarBoton(this)">
+                    <img class="iconoBotones" src="../img/taxiWhite.png" alt="Airport Taxis">Airport Taxis
+                </button>
             </div>
         </div>
     </header>

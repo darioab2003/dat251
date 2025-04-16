@@ -105,7 +105,7 @@ body {
 .button-eliminar,
 .button-cerrar,
 .button-editar {
-    background-color: green;
+    background-color:green;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -118,7 +118,7 @@ body {
 .button-eliminar,
 .button-cerrar:hover,
 .button-editar:hover {
-    background-color: #004000;
+    background-color:green;
 }
 
 .login-message {
@@ -155,7 +155,7 @@ body {
 .submit-button {
     width: 100%;
     margin: 10px auto;
-    background-color: green;
+    background-color:green;
     /* Color de fondo azul */
     color: #fff;
     /* Color de texto blanco */
@@ -170,7 +170,7 @@ body {
 }
 
 .submit-button:hover {
-    background-color: #004000;
+    background-color:green;
     /* Cambia el color de fondo al pasar el cursor sobre el botón */
 }
 
@@ -236,7 +236,7 @@ body {
 }
 
 .link-text {
-    color: blue;
+    color:green;
     text-decoration: underline;
     /* Puedes agregar subrayado si quieres que parezca más un enlace */
 }
@@ -249,7 +249,7 @@ body {
 
 .button-reservas,
 .button-reservas-link {
-    background-color: #004000;
+    background-color:green;
     color: rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
@@ -261,7 +261,7 @@ body {
 
 .button-reservas:hover,
 .button-reservas-link:hover {
-    background-color: #004000;
+    background-color:green;
 }
 
 #misReservas-options {

@@ -15,7 +15,7 @@ body {
     left: 0;
     right: 0;
     height: 80px;
-    background-color: #004000;
+    background-color: green;
 }
 
 .cabecera {
@@ -58,7 +58,7 @@ body {
 
 .inicioSesion {
     background-color: white;
-    color: #004000;
+    color:green;
     font-size: 15px;
     width: 150px;
     height: 40px;
@@ -145,7 +145,7 @@ textarea {
 }
 
 #guardarCambios {
-    background-color: #004000;
+    background-color:green;
     color: white;
 }
 
@@ -156,7 +156,7 @@ textarea {
     height: 10%; 
     width: 100%;
     background-color: #d1d1d1; /* Fondo gris clarito */
-    color: green; /* Color azul para el texto y los enlaces */
+    color: green;
     text-align: center;
     padding: 20px;
     box-sizing: border-box; /* Incluir el padding en el ancho total */
@@ -164,7 +164,7 @@ textarea {
 }
 
 .footer a {
-    color: green; /* Color azul para los enlaces */
+    color:green;
     text-decoration: none;
     margin: 0 10px; /* Márgenes entre los enlaces */
 }

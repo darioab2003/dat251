@@ -15,7 +15,7 @@ body {
     left: 0;
     right: 0;
     height: 150px;
-    background-color: green;
+    background-color:green;
 }
 
 .cabecera {
@@ -57,7 +57,7 @@ body {
 
 .inicioSesion {
     background-color: white;
-    color: #004000;
+    color: rgb(7, 98, 172);
     font-size: 15px;
     width: 150px;
     height: 40px;
@@ -242,7 +242,7 @@ body {
 }
 
 #search-button {
-    background-color: green;
+    background-color:green;
     color: white;
     font-size: 20px;
     width: 255px;
@@ -258,7 +258,7 @@ body {
     position: absolute;
     margin-top: 100px;
     margin-left: 80px;
-    background-color: green;
+    background-color:green;
     color: #fff;
     padding: 10px 15px;
     border: none;
@@ -313,7 +313,7 @@ body {
 }
 
 #reservarAhora {
-    background-color: green;
+    background-color:green;
     color: white;
     font-size: 21px;
     width: 230px;
@@ -344,7 +344,7 @@ body {
     overflow: hidden;
     padding: 13px 10px;
     font-size: 18px;
-    color: #004000;
+    color: rgb(15, 85, 128);
 }
 
 .etiqueta img {
@@ -550,7 +550,7 @@ body {
 #puntosFuertes {
     width: 280px;
     height: 420px;
-    background-color: rgba(147, 176, 235, 0.748);
+    background-color:green;
     margin-top: 5px;
     padding: 15px;
 }
@@ -578,7 +578,7 @@ body {
 }
 
 #reservarAhora2 {
-    background-color: green;
+    background-color:green;
     color: white;
     margin-top: 25px;
     font-size: 18px;
@@ -709,8 +709,8 @@ body {
     height: 60px;
     width: 160px;
     background-color: white;
-    color: #004000;
-    border: 2px solid #004000;
+    color: rgb(7, 98, 172);
+    border: 2px solid green;
     border-radius: 3px;
     font-size: 18px;
     padding: 10px 20px;
@@ -719,7 +719,7 @@ body {
 }
 
 #hazteCuenta {
-    color: green;
+    color: green;;
     margin: 0;
     cursor: pointer;
 }
@@ -728,8 +728,8 @@ body {
     height: 60px;
     width: 120px;
     background-color: white;
-    color: #004000;
-    border: 2px solid #004000;
+    color: rgb(7, 98, 172);
+    border: 2px solid green;
     border-radius: 3px;
     font-size: 18px;
     padding: 10px 20px;
@@ -779,7 +779,7 @@ body {
 }
 
 #search-button {
-    background-color: green;
+    background-color:green;
     color: white;
     font-size: 20px;
     width: 240px;
@@ -802,12 +802,12 @@ td {
 }
 
 th {
-    background-color: green;
+    background-color:green;
     color: white;
 }
 
 th:nth-child(3) {
-    background-color: green;
+    background-color:green;
     /* Azul más oscuro para la cabecera de la columna 3 */
     color: white;
 }
@@ -838,7 +838,7 @@ td:nth-child(3) {
 
 .footer {
     margin-top: 50px;
-    background-color: #004000;
+    background-color:green;
     height: 220px;
     color: white;
     text-align: center;
@@ -871,14 +871,14 @@ td:nth-child(3) {
     height: 50px;
     width: 150px;
     font-size: 18px;
-    background-color: green;
+    background-color:green;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 .registroSesion {
-    background-color: #004000;
+    background-color:green;
     height: 40px;
     color: white;
     text-align: center;
@@ -897,7 +897,7 @@ td:nth-child(3) {
 
 .reservar-button {
     padding: 8px 16px;
-    background-color: green;
+    background-color:green;
     color: white;
     border: none;
     cursor: pointer;
