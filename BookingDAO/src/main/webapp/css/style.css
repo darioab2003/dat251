@@ -18,6 +18,28 @@ body {
     background-color:green;
 }
 
+/* Contenedor logo + título */
+.cabecera .logo-title {
+  display: flex;
+  align-items: center;
+}
+
+/* Imagen del logo en blanco junto al título */
+.cabecera .logo-img {
+  width: 80px;     /* ajusta al tamaño que desees */
+  height: 80px;
+  margin-right: -10px; /* espacio entre logo y texto */
+  object-fit: contain;
+}
+
+/* Ajuste fino del H3 ahora dentro de logo-title */
+.cabecera .logo-title h3 {
+  font-size: 25px;
+  color: white;
+  margin-left: -50px;       /* elimina margen por defecto */
+}
+
+
 .cabecera {
     position: relative;
     margin: 10px auto;

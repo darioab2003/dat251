@@ -7,6 +7,7 @@
             <img src="../img/informacion.png" alt="Información">
         </div>
         <form name="reviewForm">
+            <!-- Grupo para la nota general -->
             <div class="input-group" data-ng-class="{'has-error': reviewForm.valoracion.$invalid && reviewForm.valoracion.$touched}">
                 <label for="valoracion">Rating (from 1 to 5)</label>
                 <input type="number" id="valoracion" name="valoracion" min="1" max="5" data-ng-model="review.review.grade" required>
@@ -14,6 +15,24 @@
                     <div class="error-message">Incorrect rating: The rating must be a number between 1 and 5.</div>
                 </div>
             </div>
+            
+           <div class="input-group"
+     data-ng-class="{'has-error': reviewForm.ecoFriendly.$invalid && reviewForm.ecoFriendly.$touched}">
+  <label for="ecoFriendly">Eco-Friendly Rating (1 to 5)</label>
+  <input type="number"
+         id="ecoFriendly"
+         name="ecoFriendly"
+         min="1"
+         max="5"
+         data-ng-model="review.review.ecoFriendly"
+         required>
+  <div data-ng-show="reviewForm.ecoFriendly.$invalid && reviewForm.ecoFriendly.$touched">
+    <div class="error-message">
+      Incorrect eco-friendly rating: must be a number between 1 and 5.
+    </div>
+  </div>
+</div>
+            <!-- Grupo para el comentario -->
             <div class="input-group" data-ng-class="{'has-error': reviewForm.descripcion.$invalid && reviewForm.descripcion.$touched}">
                 <label for="descripcion">Comment</label>
                 <textarea id="descripcion" name="descripcion" rows="4" cols="50" data-ng-model="review.review.review" required></textarea>

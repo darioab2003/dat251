@@ -6,6 +6,10 @@ public class Review {
 	private long idu;
 	private String review;
 	private int grade;
+	private int ecoGrade;
+	
+	
+	
 	
 	public long getIdp() {
 		return idp;
@@ -30,6 +34,13 @@ public class Review {
 	}
 	public void setGrade(int grade) {
 		this.grade = grade;
+	}
+	
+	public int getEcoGrade() {
+		return ecoGrade;
+	}
+	public void setEcoGrade(int eGrade) {
+		this.ecoGrade = eGrade;
 	}
 	
 	

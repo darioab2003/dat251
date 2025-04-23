@@ -19,6 +19,17 @@ angular.module('Booking')
 				});
     	},
     	
+
+
+getAllOrderedByEcoFriendly: function(){
+      return $http
+        .get(url + 'orderedByEcoFriendly')
+        .then(function(response){
+          return response.data;
+        });
+    },
+  
+    	
     	getProperties : function(userid){
     		var urlid = url + userid;
     		return $http.get(urlid)

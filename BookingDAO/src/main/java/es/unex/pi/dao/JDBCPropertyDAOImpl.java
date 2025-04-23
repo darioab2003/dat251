@@ -138,10 +138,10 @@ public class JDBCPropertyDAOImpl implements PropertyDAO {
 			
 			try {
 				stmt = conn.createStatement();
-				stmt.executeUpdate("INSERT INTO properties (name,address,telephone,idu,gradesAverage,city,centerDistance,description,petFriendly,available,wifi,tv,aireAcondicionado) VALUES('"
+				stmt.executeUpdate("INSERT INTO properties (name,address,telephone,idu,gradesAverage,city,centerDistance,description,petFriendly,available,wifi,tv,aireAcondicionado,averageEcoFriendly) VALUES('"
 									+property.getName()+"','"+property.getAddress()+"','" + property.getTelephone() + "'," 
 									+ property.getIdu() + "," + property.getGradesAverage()+",'"+ property.getCity() +"',"+ property.getCenterDistance() +",'" + property.getDescription() + "'," 
-									+ property.getPetFriendly() +"," + property.getAvailable() +","+ property.getWiFi() +"," + property.getTV() +"," + property.getaireAcondicionado() +")");
+									+ property.getPetFriendly() +"," + property.getAvailable() +","+ property.getWiFi() +"," + property.getTV() +"," + property.getaireAcondicionado() +","+ property.getAverageEcoFriendly() + ")");
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -184,6 +184,7 @@ public class JDBCPropertyDAOImpl implements PropertyDAO {
 				+", aireAcondicionado="+property.getaireAcondicionado()
 				+", tv="+property.getWiFi()
 				+", wifi="+property.getTV()
+				+ ", averageEcoFriendly=" + property.getAverageEcoFriendly()
 				+" WHERE id = "+property.getId());
 				logger.info("updating property: "+property.getId());
 						
@@ -255,6 +256,7 @@ public class JDBCPropertyDAOImpl implements PropertyDAO {
 		property.setaireAcondicionado(rs.getInt("aireAcondicionado"));
 		property.setTV(rs.getInt("tv"));
 		property.setWiFi(rs.getInt("wifi"));
+		property.setAverageEcoFriendly(rs.getDouble("averageEcoFriendly"));
 	}
 	
 	
@@ -341,6 +343,26 @@ public class JDBCPropertyDAOImpl implements PropertyDAO {
 		// TODO Auto-generated method stub
 		this.conn = conn;
 	}
+	
+	@Override
+	public List<Property> findAllOrderByEcoFriendly() {
+	    String sql = "SELECT * FROM properties ORDER BY averageEcoFriendly DESC";
+	    List<Property> list = new ArrayList<>();
+	    try (PreparedStatement stmt = conn.prepareStatement(sql);
+	         ResultSet rs = stmt.executeQuery()) {
+	        while (rs.next()) {
+	            Property property = new Property();
+	            // Mapea todos los campos, incluido averageEcoFriendly
+	            fromRsToPropertyObject(rs, property);
+	            list.add(property);
+	            logger.info("fetching eco-friendly ordered property: " + property.getId());
+	        }
+	    } catch (SQLException e) {
+	        logger.severe("Error fetching properties ordered by Eco-Friendly: " + e.getMessage());
+	    }
+	    return list;
+	}
+
 
 	
 }

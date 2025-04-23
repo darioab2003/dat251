@@ -31,6 +31,20 @@
             <label for="valoracion">Average Rating</label>
             <input type="text" id="valoracion" placeholder="Enter the rating" data-ng-model="alojamiento.property.gradesAverage" required>
         </div>
+        
+        
+        <div class="input-group">
+    <label for="averageEcoFriendly">Eco-Friendly Rating (1 to 5)</label>
+    <input
+        type="number"
+        id="averageEcoFriendly"
+        name="averageEcoFriendly"
+        placeholder="Enter eco-friendly rating"
+        data-ng-model="alojamiento.property.averageEcoFriendly"
+        min="1"
+        max="5"
+        required>
+</div>
 
         <div class="input-group">
             <label for="descripcion">Description</label>

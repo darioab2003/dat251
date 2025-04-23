@@ -33,6 +33,17 @@
 			</div>
 			
 			<div class="input-group">
+          <label for="averageEcoFriendly">Eco-Friendly Rating (1 to 5)</label>
+          <input type="number"
+                 id="averageEcoFriendly"
+                 name="averageEcoFriendly"
+                 data-ng-model="alojamiento.property.averageEcoFriendly"
+                 min="1"
+                 max="5"
+                 required>
+      </div>
+			
+			<div class="input-group">
 			    <label for="descripcion">Description</label>
 			    <input type="text" id="description" name="description" data-ng-model="alojamiento.property.description" required>
 			</div>

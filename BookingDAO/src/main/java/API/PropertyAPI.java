@@ -14,8 +14,10 @@ import es.unex.pi.dao.JDBCCategoryDAOImpl;
 import es.unex.pi.dao.JDBCAccommodationDAOImpl;
 import es.unex.pi.dao.JDBCPropertiesCategoriesDAOImpl;
 import es.unex.pi.dao.JDBCPropertyDAOImpl;
+import es.unex.pi.dao.JDBCReviewDAOImpl;
 import es.unex.pi.dao.PropertiesCategoriesDAO;
 import es.unex.pi.dao.PropertyDAO;
+import es.unex.pi.dao.ReviewDAO;
 import es.unex.pi.model.Category;
 import es.unex.pi.model.Accommodation;
 import es.unex.pi.model.Property;
@@ -168,6 +170,7 @@ public class PropertyAPI {
           return propertyDao.getAllOrderedByRating();
       }
       
+      
       @GET
       @Path("/similaresLocalidad/{propertyid: [0-9]+}")
       @Produces(MediaType.APPLICATION_JSON)
@@ -188,6 +191,10 @@ public class PropertyAPI {
 		  
 		  return listPropertySimilar;
       }
+      
+      
+     
+      
       
       @GET
       @Path("/similaresValoracion/{propertyid: [0-9]+}")
@@ -338,5 +345,15 @@ public class PropertyAPI {
 		  
 		  session.setAttribute("id", id);
 		  return response;
+	  }
+	  
+	  @GET
+	  @Path("/orderedByEcoFriendly")
+	  public Response getAllOrderedByEcoFriendly() {
+		  Connection conn = (Connection)sc.getAttribute("dbConn");
+		  PropertyDAO propertyDao = new JDBCPropertyDAOImpl();
+		  propertyDao.setConnection(conn);
+	      List<Property> list = propertyDao.findAllOrderByEcoFriendly();
+	      return Response.ok(list).build();
 	  }
 } 

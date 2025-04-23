@@ -98,6 +98,7 @@
                     <option value="disponible">Available</option>
                     <option value="no_disponible">Not available</option>
                     <option value="valoracion">By rating</option>
+                    <option value="ecofriendly">Eco-Friendly</option>
                 </select>
                 <button type="submit">Filter</button>
             </form>
@@ -128,8 +129,31 @@
                             <span class="mas-informacion-link">{{property.city}}</span>
                             <span class="mas-informacion-link">Show on Map</span> - {{property.centerDistance}} m from the center
                         </p>
-                        <img id="hojas" src="../img/hojas.JPG" alt="Leaves">
-                        <p id="habitacion-info">{{property.description}}</p>
+						<!-- ECO-FRIENDLY -->
+					<div class="eco-leaves">
+					  <!-- 1) Cero hojas: icono “noLeaf” -->
+					  <span data-ng-if="property.averageEcoFriendly == 0">
+					    <img src="../img/noLeaf.png" alt="No leaves">
+					  </span>
+					  
+					  <!-- 2) Hojas completas -->
+					  <span
+					    data-ng-if="property.averageEcoFriendly > 0"
+					    data-ng-repeat="i in [].constructor(property.averageEcoFriendly - (property.averageEcoFriendly % 1)) track by $index">
+					    <img src="../img/leaf.png" alt="Leaf">
+					  </span>
+					  
+					  <!-- 3) Media hoja si la parte decimal ≥ 0.5 -->
+					  <span data-ng-if="(property.averageEcoFriendly % 1) >= 0.5">
+					    <img src="../img/halfLeaf.png" alt="Half leaf">
+					  </span>
+					  
+					  <!-- 4) Nota numérica -->
+					  <span class="eco-rating-num">
+					    {{property.averageEcoFriendly | number:1}}/5
+					  </span>
+					  </div>
+                     <p id="habitacion-info">{{property.description}}</p>
                         <p id="cama-info">Beds: 1 double or 2 singles</p>
                         <p id="aviso-info">
                             Rooms available: 
@@ -156,39 +180,40 @@
             </div>
         </div>
     </div>
+</div>
 
-    <div class="footer">
-        <div class="footer-text">
-            <p id="ahorraTiempo">Save time and money!</p>
-            <p>Sign up and we'll send you the best offers for you.</p>
-        </div>
-
-        <form>
-            <input type="email" class="email-input" placeholder="Your email address">
-            <button type="submit" class="subscribe-button">Subscribe!</button>
-        </form>
+<div class="footer">
+    <div class="footer-text">
+        <p id="ahorraTiempo">Save time and money!</p>
+        <p>Sign up and we'll send you the best offers for you.</p>
     </div>
 
-    <script>
-        const presupuestoInput = document.getElementById('presupuesto');
-        const cantidadDinero = document.getElementById('cantidad-dinero');
+    <form>
+        <input type="email" class="email-input" placeholder="Your email address">
+        <button type="submit" class="subscribe-button">Subscribe!</button>
+    </form>
+</div>
 
-        presupuestoInput.addEventListener('input', () => {
-            const valorPresupuesto = presupuestoInput.value;
-            cantidadDinero.textContent = `$${valorPresupuesto}`;
-        });
+<script>
+    const presupuestoInput = document.getElementById('presupuesto');
+    const cantidadDinero = document.getElementById('cantidad-dinero');
 
-        function activarBoton(boton) {
-            // Deactivate all buttons
-            let botones = document.querySelectorAll('.boton');
-            botones.forEach(b => b.classList.remove('activado'));
+    presupuestoInput.addEventListener('input', () => {
+        const valorPresupuesto = presupuestoInput.value;
+        cantidadDinero.textContent = `$${valorPresupuesto}`;
+    });
 
-            // Activate the clicked button
-            boton.classList.add('activado');
-        }
+    function activarBoton(boton) {
+        // Deactivate all buttons
+        let botones = document.querySelectorAll('.boton');
+        botones.forEach(b => b.classList.remove('activado'));
 
-        document.getElementById('verDisponibilidadBtn').addEventListener('click', function() {
-            // Redirect to the index4.html page
-            window.location.href = 'index4.html';
-        });
-    </script>
+        // Activate the clicked button
+        boton.classList.add('activado');
+    }
+
+    document.getElementById('verDisponibilidadBtn').addEventListener('click', function() {
+        // Redirect to the index4.html page
+        window.location.href = 'index4.html';
+    });
+</script>

@@ -617,3 +617,40 @@ nav {
     cursor: pointer;
     font-size: 16px;
 }
+
+/* Contenedor de hojas y no-leaf */
+.eco-leaves {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Cada hoja eco-friendly */
+.eco-leaves img[src*="leaf.png"] {
+  width: 18px;
+  height: 18px;
+  margin-right: -3px; 
+  object-fit: contain;
+}
+
+/* Icono “no leaves” cuando la puntuación es cero */
+.eco-leaves img[src*="noLeaf.png"] {
+  width: 30px;
+  height: 30px;
+}
+
+/* El valor numérico al final */
+.eco-rating-num {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-left: 7px;     /* separación antes del número */
+}
+
+/* Media hoja eco-friendly */
+.eco-leaves img[src*="halfLeaf.png"] {
+  width: 32px;        /* mismo ancho que las hojas completas */
+  height: 32px;       /* misma altura */
+  margin-left: -5px; /* mismo solapamiento que las hojas completas */
+  object-fit: contain;
+}
+

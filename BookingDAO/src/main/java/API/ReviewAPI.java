@@ -124,19 +124,23 @@ public class ReviewAPI {
 		  
 		  int media = 0;
 		  int num = 0;
+		  int ecoGrade = 0;
 		  
 		  List<Review> listaReview = reviewDao.getAll();
 		  for (Review review2 : listaReview) {
 			if(review2.getIdp() == propertyid) {
 			  num++;
 			  media = media + review2.getGrade();
+			  ecoGrade += review2.getEcoGrade();
 			}
 		  }
 		  
 		  media = media / num;
+		  ecoGrade = ecoGrade / num;
 		  
 		  Property property = propertyDao.get(propertyid);
 		  property.setGradesAverage(media);
+		  property.setAverageEcoFriendly(ecoGrade);
 		  propertyDao.update(property);
 		  
 		  return response; 

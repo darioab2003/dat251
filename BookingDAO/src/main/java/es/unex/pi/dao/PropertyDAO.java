@@ -91,4 +91,5 @@ public interface PropertyDAO {
 	User getOwner(long propertyId);
 	public List<Property> getAllOrderedByRating();
 	public User getPropertyOwner(long propertyId);
+	List<Property> findAllOrderByEcoFriendly();
 }

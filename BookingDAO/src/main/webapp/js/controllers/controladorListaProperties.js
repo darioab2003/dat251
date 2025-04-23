@@ -107,6 +107,15 @@ angular.module('Booking')
                             console.error('Error al filtrar por valoración', error);
                         });
                     break;
+ case 'ecofriendly':
+          propertiesFactory.getAllOrderedByEcoFriendly()
+            .then(data => {
+              // reforzamos orden por seguridad
+              data.sort((a,b) => b.averageEcoFriendly - a.averageEcoFriendly);
+              $scope.properties = data;
+            })
+            .catch(err => console.error('Error eco-friendly filter', err));
+          break;
                 default:
                     console.error('Opción de filtro no válida');
             }

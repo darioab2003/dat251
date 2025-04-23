@@ -93,4 +93,5 @@ public interface ReviewDAO {
 	 */
 	
 	public boolean delete(long idr, long idu);
+	
 }

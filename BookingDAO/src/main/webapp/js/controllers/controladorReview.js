@@ -47,6 +47,11 @@ angular.module('Booking')
                 console.error("La valoración debe estar entre 1 y 5");
                 return;
             }
+            
+            if (ViewModel.review.ecoFriendly < 1 || ViewModel.review.ecoFriendly > 5) {
+                console.error("La valoración de ecoFriendly debe estar entre 1 y 5");
+                return;
+            }
 
             reviewsFactory.addReview(ViewModel.review.propertyID, ViewModel.review)
                 .then(function(response) {

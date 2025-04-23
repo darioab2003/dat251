@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Nacho Alcalde">
-    <title>Booking.com</title>
+    <title>ecoNest</title>
     <link rel="stylesheet" href="css/registro.css">
     <link rel="icon" href="img/icono.svg">
 </head>
@@ -16,7 +16,7 @@
     <header>
         <div id="bannerAzul">
             <div id="encuentraEstancia">
-                <div id="logo">Booking.com</div>
+                <div id="logo">ecoNest</div>
                 <div id="icono1" class="iconosInicioSesion">
                     <img src="img/bandera.png" width="30" alt="Flag Icon">
                 </div>

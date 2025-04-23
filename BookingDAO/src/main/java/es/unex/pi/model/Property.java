@@ -17,8 +17,18 @@ public class Property {
 	private int WIFI;
 	private int TV; 
 	private int aireAcondicionado;
-
 	
+
+	private double averageEcoFriendly;
+	
+	
+	public double getAverageEcoFriendly() {
+		return averageEcoFriendly;
+	}
+	public void setAverageEcoFriendly(double averageEcoFriendly) {
+		this.averageEcoFriendly = averageEcoFriendly;
+	}
+
 	public String getName() {
 		return name;
 	}
