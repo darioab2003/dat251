@@ -2,7 +2,7 @@
   "info": {
     "_postman_id": "2153877c-a5b8-4cec-805e-fbe693a34745",
     "name": "Contract Testing",
-    "description": "# About this collection\n\nThis collection helps you set up contract tests to ensure that two separate systems are compatible and can communicate with one another.\n\n## **Using the collection**\n\n**Step 1:** Send the sample requests and view the response and test results.\n\n**Step 2:** Replace the sample request URLs with your desired API endpoints.\n\n**Step 3:** Customize the tests in the \"Tests\" tab if needed. Don't forget to save your changes.\n\n### Resources\n\n[Scripting in Postman](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/)\n\n[Test script examples](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/)\n\n[Postman Sandbox API reference](https://learning.postman.com/docs/sending-requests/grpc/postman-sandbox-api/#writing-assertions)\n\n[Using the Collection Runner](https://learning.postman.com/docs/collections/running-collections/intro-to-collection-runs/)\n\n[  \n](https://postman.postman.co/documentation/24552533-5bead607-0197-4e1d-87d4-3160bc7631c1?entity=&branch=&version=)",
+    "description": "# About this collection\n\nThis collection helps you set up contract tests to ensure that two separate systems are compatible and can communicate with one another.\n\n## **Using the collection**\n\n**Step 1:** Send the sample requests and view the response and test results.\n\n**Step 2:** Replace the sample request URLs with your desired API endpoints.\n\n**Step 3:** Customize the tests in the \"Tests\" tab if needed. Don't forget to save your changes.\n\n### Resources\n\n[Scripting in Postman](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/)\n\n[Test script examples](https://learning.postman.com/docs/writing-scripts/script-references/test-examples/)\n\n[Postman Sandbox API reference](https://learning.postman.com/docs/sending-requests/grpc/postman-sandbox-api/#writing-assertions)\n\n[Using the Collection Runner](https://learning.postman.com/docs/collections/running-collections/intro-to-collection-runs/)",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
     "_exporter_id": "38975656",
     "_collection_link": "https://project2-5539.postman.co/workspace/DAT-251-project~acc7a62f-bfad-4b6c-b847-6bb21d5af6ba/collection/38975656-2153877c-a5b8-4cec-805e-fbe693a34745?action=share&source=collection_link&creator=38975656"
@@ -17,28 +17,16 @@
           "mode": "raw",
           "raw": "{\n    \"id\":19,\n    \"email\":\"romualdosteven@example.com\",\n    \"password\": \"Romualdo@2123\",\n    \"name\": \"Romualdo\",\n    \"surname\":\"Steven\"\n}",
           "options": {
-            "raw": {
-              "language": "json"
-            }
+            "raw": { "language": "json" }
           }
         },
         "url": {
           "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/users/created",
           "protocol": "https",
-          "host": [
-            "0893-84-211-49-99",
-            "ngrok-free",
-            "app"
-          ],
-          "path": [
-            "BookingDAO",
-            "rest",
-            "users",
-            "created"
-          ]
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "users", "created"]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "Delete User",
@@ -49,28 +37,16 @@
           "mode": "raw",
           "raw": "{\n  \"id\": 19,\n  \"email\": \"ashleymor@example.com\",\n  \"password\": \"Ashley@2123\",\n  \"name\": \"Ashley\",\n  \"surname\": \"Morado\"\n}",
           "options": {
-            "raw": {
-              "language": "json"
-            }
+            "raw": { "language": "json" }
           }
         },
         "url": {
           "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/users/19",
           "protocol": "https",
-          "host": [
-            "0893-84-211-49-99",
-            "ngrok-free",
-            "app"
-          ],
-          "path": [
-            "BookingDAO",
-            "rest",
-            "users",
-            "19"
-          ]
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "users", "19"]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "Update Property",
@@ -81,34 +57,20 @@
           "mode": "raw",
           "raw": "{\n  \"name\": \"Bergen hostal\"\n}",
           "options": {
-            "raw": {
-              "language": "json"
-            }
+            "raw": { "language": "json" }
           }
         },
         "url": {
           "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/properties/38",
           "protocol": "https",
-          "host": [
-            "0893-84-211-49-99",
-            "ngrok-free",
-            "app"
-          ],
-          "path": [
-            "BookingDAO",
-            "rest",
-            "properties",
-            "38"
-          ]
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "properties", "38"]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "Update User",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
+      "protocolProfileBehavior": { "disableBodyPruning": true },
       "request": {
         "method": "GET",
         "header": [],
@@ -116,28 +78,16 @@
           "mode": "raw",
           "raw": "{\n  \"id\": 19,\n  \"email\": \"ashleymor@example.com\",\n  \"password\": \"Ashley@2123\",\n  \"name\": \"Ashley\",\n  \"surname\": \"Morado\"\n}",
           "options": {
-            "raw": {
-              "language": "json"
-            }
+            "raw": { "language": "json" }
           }
         },
         "url": {
           "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/users/1",
           "protocol": "https",
-          "host": [
-            "0893-84-211-49-99",
-            "ngrok-free",
-            "app"
-          ],
-          "path": [
-            "BookingDAO",
-            "rest",
-            "users",
-            "1"
-          ]
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "users", "1"]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "Get Property",
@@ -147,21 +97,10 @@
         "url": {
           "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/properties/property/1",
           "protocol": "https",
-          "host": [
-            "0893-84-211-49-99",
-            "ngrok-free",
-            "app"
-          ],
-          "path": [
-            "BookingDAO",
-            "rest",
-            "properties",
-            "property",
-            "1"
-          ]
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "properties", "property", "1"]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "Get User",
@@ -171,60 +110,75 @@
         "url": {
           "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/users/19",
           "protocol": "https",
-          "host": [
-            "0893-84-211-49-99",
-            "ngrok-free",
-            "app"
-          ],
-          "path": [
-            "BookingDAO",
-            "rest",
-            "users",
-            "19"
-          ]
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "users", "19"]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "Get AllUsers",
       "request": {
         "method": "GET",
-        "header": []
-      },
-      "response": []
+        "header": [],
+        "url": {
+          "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/users",
+          "protocol": "https",
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "users"]
+        }
+      }
     },
     {
       "name": "GET /users/{userid}/favorites",
       "request": {
         "method": "GET",
-        "header": []
-      },
-      "response": []
+        "header": [],
+        "url": {
+          "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/users/19/favorites",
+          "protocol": "https",
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "users", "19", "favorites"]
+        }
+      }
     },
     {
       "name": "Get All Accommodations",
       "request": {
         "method": "GET",
-        "header": []
-      },
-      "response": []
+        "header": [],
+        "url": {
+          "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/accommodations",
+          "protocol": "https",
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "accommodations"]
+        }
+      }
     },
     {
       "name": "Get Accommodations by Property",
       "request": {
         "method": "GET",
-        "header": []
-      },
-      "response": []
+        "header": [],
+        "url": {
+          "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/accommodations/property/38",
+          "protocol": "https",
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "accommodations", "property", "38"]
+        }
+      }
     },
     {
       "name": "Get Accommodation by ID",
       "request": {
         "method": "GET",
-        "header": []
-      },
-      "response": []
+        "header": [],
+        "url": {
+          "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/accommodations/1",
+          "protocol": "https",
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "accommodations", "1"]
+        }
+      }
     },
     {
       "name": "Update Accommodation",
@@ -235,36 +189,36 @@
           "mode": "raw",
           "raw": "{\n    \"name\": \"Doble Superior plus\"\n}",
           "options": {
-            "raw": {
-              "language": "json"
-            }
+            "raw": { "language": "json" }
           }
         },
         "url": {
           "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/accommodations/1",
           "protocol": "https",
-          "host": [
-            "0893-84-211-49-99",
-            "ngrok-free",
-            "app"
-          ],
-          "path": [
-            "BookingDAO",
-            "rest",
-            "accommodations",
-            "1"
-          ]
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "accommodations", "1"]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "Create Accommodation for Property",
       "request": {
-        "method": "GET",
-        "header": []
-      },
-      "response": []
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{}",
+          "options": {
+            "raw": { "language": "json" }
+          }
+        },
+        "url": {
+          "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/accommodations/created",
+          "protocol": "https",
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "accommodations", "created"]
+        }
+      }
     },
     {
       "name": "Delete Accommodation",
@@ -274,50 +228,53 @@
         "url": {
           "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/accommodations/20",
           "protocol": "https",
-          "host": [
-            "0893-84-211-49-99",
-            "ngrok-free",
-            "app"
-          ],
-          "path": [
-            "BookingDAO",
-            "rest",
-            "accommodations",
-            "20"
-          ]
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "accommodations", "20"]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "Get All Booking Accommodations",
       "request": {
         "method": "GET",
-        "header": []
-      },
-      "response": []
+        "header": [],
+        "url": {
+          "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/bookingAccommodations",
+          "protocol": "https",
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "bookingAccommodations"]
+        }
+      }
     },
     {
       "name": "Get Booking Accommodations by Booking ID",
       "request": {
         "method": "GET",
-        "header": []
-      },
-      "response": []
+        "header": [],
+        "url": {
+          "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/bookingAccommodations/1",
+          "protocol": "https",
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "bookingAccommodations", "1"]
+        }
+      }
     },
     {
       "name": "Get User Bookings",
       "request": {
         "method": "GET",
-        "header": []
-      },
-      "response": []
+        "header": [],
+        "url": {
+          "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/bookings/users/19",
+          "protocol": "https",
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "bookings", "users", "19"]
+        }
+      }
     },
     {
       "name": "GetReviewByIDP",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
+      "protocolProfileBehavior": { "disableBodyPruning": true },
       "request": {
         "method": "GET",
         "header": [],
@@ -325,36 +282,29 @@
           "mode": "raw",
           "raw": "{\n  \"review\": \"Excelente ubicación y limpieza\",\n  \"grade\": 5\n}",
           "options": {
-            "raw": {
-              "language": "json"
-            }
+            "raw": { "language": "json" }
           }
         },
         "url": {
-          "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/reviews/",
+          "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/reviews/property/1",
           "protocol": "https",
-          "host": [
-            "0893-84-211-49-99",
-            "ngrok-free",
-            "app"
-          ],
-          "path": [
-            "BookingDAO",
-            "rest",
-            "reviews",
-            ""
-          ]
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "reviews", "property", "1"]
         }
-      },
-      "response": []
+      }
     },
     {
       "name": "GetReviewByIdp&Idu",
       "request": {
         "method": "GET",
-        "header": []
-      },
-      "response": []
+        "header": [],
+        "url": {
+          "raw": "https://0893-84-211-49-99.ngrok-free.app/BookingDAO/rest/reviews/property/1/user/19",
+          "protocol": "https",
+          "host": ["0893-84-211-49-99", "ngrok-free", "app"],
+          "path": ["BookingDAO", "rest", "reviews", "property", "1", "user", "19"]
+        }
+      }
     }
   ],
   "variable": [
