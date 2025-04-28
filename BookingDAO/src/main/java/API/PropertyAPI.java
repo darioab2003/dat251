@@ -318,6 +318,7 @@ public class PropertyAPI {
 	  @POST
 	  @Path("/created")
 	  @Consumes(MediaType.APPLICATION_JSON)
+	  @Produces(MediaType.APPLICATION_JSON)
 	  public Response postProperty (Property newProperty, @Context HttpServletRequest request) {
 		  HttpSession session = request.getSession();
 		  Connection conn = (Connection)sc.getAttribute("dbConn");
