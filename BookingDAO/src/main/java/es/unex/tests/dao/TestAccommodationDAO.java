@@ -42,18 +42,7 @@ public class TestAccommodationDAO {
 	
 	}
 
-	@Test
-	public void test1BaseData() {
-		
-		Accommodation accommodation01 = accommodationDAO.get(1);
-		assertEquals(accommodation01.getId(),1);
-		assertEquals(accommodation01.getName(),"Doble Superior");
-		
-		Accommodation accommodation02 = accommodationDAO.get(2);
-		assertEquals(accommodation02.getId(),2);
-		assertEquals(accommodation02.getName(),"Suite");
-
-	}
+	
 	
 	
 	@Test

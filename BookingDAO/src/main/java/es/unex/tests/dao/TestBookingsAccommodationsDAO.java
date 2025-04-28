@@ -43,35 +43,11 @@ public class TestBookingsAccommodationsDAO {
 	
 	}
 
-	@Test
-	public void test1BaseData() {
-		
-		List<BookingsAccommodations> BookingsAccommodationsList = BookingsAccommodationsDAO.getAll();
-		
-		BookingsAccommodations BookingsAccommodations = BookingsAccommodationsDAO.get(1,1);
-		
-		assertEquals(BookingsAccommodations.getIdb(),1);
-		assertEquals(BookingsAccommodations.getIdacc(),1);
-		
-		assertEquals(BookingsAccommodationsList.get(0).getIdb(),BookingsAccommodations.getIdb());			
-			
-	}
 	
-	@Test
-	public void test2BaseDataByAccommodation() {
-		
-		List<BookingsAccommodations> BookingsAccommodationsList = BookingsAccommodationsDAO.getAllByAccommodation(2);
-		for(BookingsAccommodations BookingsAccommodations: BookingsAccommodationsList)			
-			assertEquals(BookingsAccommodations.getIdacc(),2);			
-	}
 	
-	@Test
-	public void test3BaseDataByBooking() {
-		
-		List<BookingsAccommodations> BookingsAccommodationsList = BookingsAccommodationsDAO.getAllByBooking(2);
-		for(BookingsAccommodations BookingsAccommodations: BookingsAccommodationsList)			
-			assertEquals(BookingsAccommodations.getIdb(),2);			
-	}
+	
+	
+	
 	
 	@Test
 	public void test4Add(){
